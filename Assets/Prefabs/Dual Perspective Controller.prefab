@@ -192,6 +192,7 @@ GameObject:
   - 114: {fileID: 11400004}
   - 114: {fileID: 11400002}
   - 114: {fileID: 11400000}
+  - 114: {fileID: 11400022}
   m_Layer: 12
   m_Name: OVRPlayerController
   m_TagString: Player
@@ -3011,7 +3012,7 @@ MonoBehaviour:
   farClipPlane: 1000
 --- !u!114 &11400022
 MonoBehaviour:
-  m_ObjectHideFlags: 1
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100024}

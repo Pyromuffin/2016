@@ -19,6 +19,7 @@ GameObject:
   - 114: {fileID: 11400004}
   - 169: {fileID: 16900000}
   - 164: {fileID: 16400000}
+  - 164: {fileID: 16400002}
   m_Layer: 8
   m_Name: Ghost
   m_TagString: Untagged
@@ -89,8 +90,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -42.2488785, y: 1.41765451, z: -75.8588562}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 25.0072193, y: 1.5, z: 15.9223938}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children:
   - {fileID: 400006}
   - {fileID: 400004}
@@ -435,6 +436,29 @@ SphereCollider:
   m_Radius: .5
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!164 &16400000
+AudioReverbFilter:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_DryLevel: 0
+  m_Room: 0
+  m_RoomHF: 0
+  m_RoomRolloff: 0
+  m_DecayTime: 1
+  m_DecayHFRatio: .5
+  m_ReflectionsLevel: -10000
+  m_ReverbLevel: 0
+  m_ReverbDelay: .0399999991
+  m_Diffusion: 100
+  m_Density: 100
+  m_HFReference: 5000
+  m_RoomLF: 0
+  m_LFReference: 250
+  m_ReflectionsDelay: 0
+  m_ReverbPreset: 27
+--- !u!164 &16400002
 AudioReverbFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}

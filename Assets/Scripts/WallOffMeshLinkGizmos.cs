@@ -10,12 +10,14 @@ public class WallOffMeshLinkGizmos : MonoBehaviour {
 
     void OnTriggerEnter(Collider col)
     {
-        var agent = col.GetComponent<NavMeshAgent>();
-        if (agent)
-        {
-            agent.speed = .5f;
-            particles.enableEmission = true;
-        }
+		if(col.gameObject.layer == LayerMask.NameToLayer("Ghost")){
+	        var agent = col.GetComponent<NavMeshAgent>();
+	        if (agent)
+	        {
+	            agent.speed = .5f;
+	            particles.enableEmission = true;
+	        }
+		}
 
     }
 

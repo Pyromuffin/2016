@@ -21,10 +21,8 @@ public class TongueController : MonoBehaviour {
 	}
 
 	 IEnumerator Attack(){
-		Debug.Log("Attack started");
 		float t = 0;
 		while(t <= duration){
-			Debug.Log("Attack Tongue loop");
 			Vector3 newScale = transform.localScale;
 			newScale.z = Mathf.Lerp(1.0f,finalScale,t/duration);
 			transform.localScale = newScale;
