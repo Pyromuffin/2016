@@ -26,7 +26,7 @@ public class TongueController : MonoBehaviour {
 		while(t <= duration){
 			Debug.Log("Attack Tongue loop");
 			Vector3 newScale = transform.localScale;
-			newScale.z = Mathf.Lerp(1.0f,finalScale,t);
+			newScale.z = Mathf.Lerp(1.0f,finalScale,t/duration);
 			transform.localScale = newScale;
 
 			t += Time.deltaTime;
@@ -37,7 +37,7 @@ public class TongueController : MonoBehaviour {
 
 		while(t >= 0.0f){
 			Vector3 newScale = transform.localScale;
-			newScale.z = Mathf.Lerp(1.0f,finalScale,t);
+			newScale.z = Mathf.Lerp(1.0f,finalScale,t/duration);
 			transform.localScale = newScale;
 
 			t -= Time.deltaTime;
