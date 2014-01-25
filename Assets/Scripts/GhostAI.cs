@@ -16,7 +16,8 @@ public class GhostAI : MonoBehaviour {
 
 	public LayerMask seePlayerLayer;
 	public float seePlayerDistance = 50.0f;
-	public float seePlayerFOV = 0.6f; //Cosine of the FOV angle the ghost can see the player in
+	public float seePlayerFOV = 0.8f; //Cosine of the FOV angle the ghost can see the player in
+	public float chasePlayerTime = 12.0f;
 	public float chasePlayerTime = 8.0f;
 	private float timeSinceLastSawPlayer = 0.0f;
 

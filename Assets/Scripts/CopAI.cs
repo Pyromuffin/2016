@@ -62,6 +62,7 @@ public class CopAI : MonoBehaviour {
 		RaycastHit hit;
 		//If Raycast its something
 		if(Physics.Raycast(transform.position, (player.transform.position - transform.position), out hit, seePlayerDistance, seePlayerLayer)){
+			Debug.Log(hit.transform);
 			//If it hits player
 			if(hit.transform.tag == "Player"){ 
 				//If the player is within the ghost's FOV
