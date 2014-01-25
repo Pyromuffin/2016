@@ -4836,6 +4836,10 @@ Prefab:
       propertyPath: patrolPoints.Array.data[2]
       value: 
       objectReference: {fileID: 772889392}
+    - target: {fileID: 11400008, guid: a0d35d39fa84c324c8fa500570835c64, type: 2}
+      propertyPath: duration
+      value: .200000003
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a0d35d39fa84c324c8fa500570835c64, type: 2}
   m_RootGameObject: {fileID: 211713283}
@@ -9079,7 +9083,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   finalScale: 20
-  duration: 1
+  duration: .200000003
 --- !u!1 &1854791745
 GameObject:
   m_ObjectHideFlags: 0
