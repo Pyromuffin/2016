@@ -7,12 +7,9 @@ public class TeddyBearAttack : MonoBehaviour {
 	public float teddyRadius = 5.0f;
 
 	private bool isAttacking  = false;
-	public AnimationClip shake;
 
 	// Use this for initialization
 	void Start () {
-		gameObject.animation.AddClip(shake,"Shake");
-		animation.clip = shake;
 	}
 	
 	// Update is called once per frame
@@ -21,8 +18,6 @@ public class TeddyBearAttack : MonoBehaviour {
 			foreach(Collider col in Physics.OverlapSphere(transform.position, teddyRadius, LayerMask.NameToLayer("Ghost"))){
 				col.gameObject.SendMessage("TeddyAttack");
 			}
-
-			gameObject.animation.Play();
 		}
 	
 	}
