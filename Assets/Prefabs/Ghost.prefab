@@ -51,8 +51,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -39.771347, y: 1.5, z: -8.07644653}
-  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_LocalPosition: {x: -42.2488785, y: 1.41765451, z: -75.8588562}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400002}
   m_Father: {fileID: 0}
@@ -231,12 +231,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48535797251a13748a41f21d927bdf80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  patrolPoints: []
+  arms: []
+  patrolPoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   seePlayerLayer:
     serializedVersion: 2
     m_Bits: 4294967295
   seePlayerDistance: 50
-  seePlayerFOV: .600000024
+  seePlayerFOVAngle: 80
   chasePlayerTime: 8
 --- !u!114 &11400004
 MonoBehaviour:
@@ -315,7 +319,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_Radius: .500010014
-  m_Speed: 4.5
+  m_Speed: 2
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 60

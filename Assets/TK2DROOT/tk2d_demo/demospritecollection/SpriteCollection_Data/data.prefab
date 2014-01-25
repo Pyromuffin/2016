@@ -2360,7 +2360,11 @@ MonoBehaviour:
   loadable: 0
   invOrthoSize: 1
   halfTargetHeight: 320
+<<<<<<< HEAD
   buildKey: 932507330
+=======
+  buildKey: 46208151
+>>>>>>> 8a45eb981ed0f20a575b9735489b1c2db30e8a35
   dataGuid: b5aec6ebd1a8ffc458a2e46a3236acab
   managedSpriteCollection: 0
   hasPlatformData: 0
