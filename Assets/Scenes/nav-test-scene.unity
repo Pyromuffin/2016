@@ -3105,7 +3105,7 @@ GameObject:
   - 114: {fileID: 609743149}
   m_Layer: 0
   m_Name: OVRPlayerController
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4082,7 +4082,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100024, guid: 261e12ed07bba8648bdcf1de5e3113e9, type: 2}
       propertyPath: m_TagString
-      value: Player
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 2000002, guid: 261e12ed07bba8648bdcf1de5e3113e9, type: 2}
       propertyPath: m_CullingMask.m_Bits
