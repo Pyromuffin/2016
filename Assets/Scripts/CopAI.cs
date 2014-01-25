@@ -14,7 +14,8 @@ public class CopAI : MonoBehaviour {
 	
 	public LayerMask seePlayerLayer;
 	public float seePlayerDistance = 50.0f;
-	public float seePlayerFOV = 0.8f; //Cosine of the FOV angle the ghost can see the player in
+	public float seePlayerFOVAngle = 80.0f; 
+	private float seePlayerFOVCosine = 0.0f; //Cosine of the FOV angle the ghost can see the player in
 	public float chasePlayerTime = 12.0f;
 	private float timeSinceLastSawPlayer = 0.0f;
 	
@@ -23,6 +24,8 @@ public class CopAI : MonoBehaviour {
 		pathManager = GetComponent<PathToGoal>();
 		player = GameObject.FindGameObjectWithTag("Player");
 		currentPatrolPoint = Random.Range(0,patrolPoints.Length);
+
+		seePlayerFOVCosine = Mathf.Cos(seePlayerFOVAngle);
 	}
 	
 	// Update is called once per frame
@@ -65,8 +68,13 @@ public class CopAI : MonoBehaviour {
 			Debug.Log(hit.transform);
 			//If it hits player
 			if(hit.transform.tag == "Player"){ 
+				//Find the vector towards the player, while ignoring the y-axis
+				Vector3 playerDirection = (player.transform.position - transform.position);
+				Vector3 playerDirectionWithoutY = playerDirection;
+				playerDirectionWithoutY.y = 0.0f;
+				
 				//If the player is within the ghost's FOV
-				if(Vector3.Dot((player.transform.position - transform.position).normalized, transform.forward) > seePlayerFOV){
+				if(Vector3.Dot(playerDirectionWithoutY.normalized, transform.forward) > seePlayerFOVCosine){
 					return true;
 				}
 			}

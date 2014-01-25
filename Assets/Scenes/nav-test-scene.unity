@@ -1192,7 +1192,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967291
   seePlayerDistance: 50
-  seePlayerFOV: .800000012
+  seePlayerFOVAngle: 80
   chasePlayerTime: 12
 --- !u!54 &211713291
 Rigidbody:
@@ -2134,7 +2134,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8d3968294210ba4a9d2bb96dfa74a16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
+  target: {fileID: 1691044837}
   autoTargetPlayer: 1
   updateType: 0
   moveSpeed: 10
@@ -3072,7 +3072,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a6e61a055336f2149a3381b953794436, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -17.0350456
+      value: 15.9223938
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a6e61a055336f2149a3381b953794436, type: 2}
       propertyPath: m_LocalRotation.x
@@ -3240,7 +3240,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967291
   seePlayerDistance: 50
-  seePlayerFOV: .600000024
+  seePlayerFOVAngle: 80
   chasePlayerTime: 8
 --- !u!54 &539413716
 Rigidbody:
@@ -3883,9 +3883,9 @@ GameObject:
   - 114: {fileID: 609743151}
   - 114: {fileID: 609743150}
   - 114: {fileID: 609743149}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: OVRPlayerController
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4850,7 +4850,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100024, guid: 261e12ed07bba8648bdcf1de5e3113e9, type: 2}
       propertyPath: m_TagString
-      value: Untagged
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 2000002, guid: 261e12ed07bba8648bdcf1de5e3113e9, type: 2}
       propertyPath: m_CullingMask.m_Bits
@@ -5222,8 +5222,20 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100024, guid: 261e12ed07bba8648bdcf1de5e3113e9, type: 2}
       propertyPath: m_Layer
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 13600000, guid: 261e12ed07bba8648bdcf1de5e3113e9, type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100172, guid: 261e12ed07bba8648bdcf1de5e3113e9, type: 2}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400014, guid: 261e12ed07bba8648bdcf1de5e3113e9, type: 2}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 1691044837}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 261e12ed07bba8648bdcf1de5e3113e9, type: 2}
   m_RootGameObject: {fileID: 340785681}
@@ -5774,7 +5786,7 @@ Transform:
   m_PrefabInternal: {fileID: 534785644}
   m_GameObject: {fileID: 1109845940}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 25.0072193, y: 1.5, z: -17.0350456}
+  m_LocalPosition: {x: 25.0072193, y: 1.5, z: 15.9223938}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children:
   - {fileID: 1277453379}
@@ -5796,7 +5808,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   seePlayerDistance: 50
-  seePlayerFOV: .600000024
+  seePlayerFOVAngle: 80
   chasePlayerTime: 8
 --- !u!54 &1109845948
 Rigidbody:
@@ -6973,7 +6985,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: a6e61a055336f2149a3381b953794436, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -39.771347
+      value: -7.52048874
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a6e61a055336f2149a3381b953794436, type: 2}
       propertyPath: m_LocalPosition.y
@@ -6981,7 +6993,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a6e61a055336f2149a3381b953794436, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -8.07644653
+      value: 19.5270691
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a6e61a055336f2149a3381b953794436, type: 2}
       propertyPath: m_LocalRotation.x
@@ -7343,7 +7355,7 @@ Transform:
   m_PrefabInternal: {fileID: 1389581770}
   m_GameObject: {fileID: 1432514250}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -39.771347, y: 1.5, z: -8.07644653}
+  m_LocalPosition: {x: -7.52048874, y: 1.5, z: 19.5270691}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children:
   - {fileID: 450831891}
@@ -7365,7 +7377,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   seePlayerDistance: 50
-  seePlayerFOV: .600000024
+  seePlayerFOVAngle: 80
   chasePlayerTime: 8
 --- !u!54 &1432514258
 Rigidbody:
@@ -8433,7 +8445,7 @@ GameObject:
   - 54: {fileID: 1691044838}
   m_Layer: 10
   m_Name: Third Person Character
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8490,7 +8502,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 1691044836}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: .300000012
   m_Height: 1.79999995
   m_Direction: 1
