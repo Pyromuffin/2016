@@ -19,7 +19,7 @@ public class GhostAI : MonoBehaviour {
     ghostState state = ghostState.patrolling;
 
     float detectRadius = 8;
-    float noticeToPursueTime = 4;
+    float noticeToPursueTime = 2;
     float chaseRadius = 30;
     float waitTime = 1;
     float attackRadius = 2;
