@@ -4,13 +4,15 @@ using System.Collections;
 public class GhostAI : MonoBehaviour {
 
 	private PathToGoal pathManager;
-	private GameObject player;
+    private StepSounds stepSounds;
+    private GameObject player;
 
 	public GameObject[] patrolPoints;
 	private GameObject currentPatrolPoint;
 
 	private bool seesPlayer = false;
 	private bool isChasingPlayer = false;
+   
 
 	public LayerMask seePlayerLayer;
 	public float seePlayerDistance = 50.0f;
@@ -24,6 +26,7 @@ public class GhostAI : MonoBehaviour {
 		pathManager = GetComponent<PathToGoal>();
 		player = GameObject.FindGameObjectWithTag("Player");
 		currentPatrolPoint = RandomPatrolPoint();
+        stepSounds = GetComponent<StepSounds>();
 	}
 	
 	// Update is called once per frame
@@ -40,8 +43,12 @@ public class GhostAI : MonoBehaviour {
 
 		if(isChasingPlayer){
 			pathManager.goalPoint = player.transform;
+            audio.pitch = 1.5f;
+            stepSounds.stepDistance = 1;
 			if(!seesPlayer && timeSinceLastSawPlayer >= chasePlayerTime){
 				isChasingPlayer = false;
+                audio.pitch = 1f;
+                stepSounds.stepDistance = 3;
 			}
 		}
 		else{
