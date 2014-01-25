@@ -1,15 +1,15 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+public enum AIState{
+	Patrol,
+	NoticePlayer,
+	ChasingPlayer,
+	ReturningToPatrol
+	//AttackingPlayer
+};
+
 public class CopAI : MonoBehaviour {
-	public enum AIState{
-		Patrol,
-		NoticePlayer,
-		ChasingPlayer,
-		ReturningToPatrol
-		//AttackingPlayer
-	};
-	
 	private PathToGoal pathManager;
 	private StepSounds stepSounds;
 	private GameObject player;
@@ -35,6 +35,8 @@ public class CopAI : MonoBehaviour {
 	public float distanceToStopChasingPlayer = 30.0f;
 	public float noticePlayerDistance = 20.0f;
 	public float chasePlayerDistance = 10.0f;
+	public float patrolReturnTimeout = 2.0f; //After going into return to patrol,
+	public float attackRange = 5.0f;
 	
 	// Use this for initialization
 	void Start () {
@@ -47,7 +49,6 @@ public class CopAI : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
 		Debug.Log(currentState);
 		bool canSeePlayer = CanSeePlayer();
 
@@ -62,9 +63,11 @@ public class CopAI : MonoBehaviour {
 				timeSeeingPlayer += Time.deltaTime;
 
 				if(playerDist < noticePlayerDistance){
+					lastPatrollingPosition = transform.position;
 					currentState = AIState.NoticePlayer;
 				}
 				if(playerDist < chasePlayerDistance){
+					lastPatrollingPosition = transform.position;
 					currentState = AIState.ChasingPlayer;
 				}
 			}
@@ -106,37 +109,28 @@ public class CopAI : MonoBehaviour {
 			if((transform.position - lastPatrollingPosition).magnitude >= distanceToStopChasingPlayer){
 				currentState = AIState.ReturningToPatrol;
 			}
+			if((transform.position - player.transform.position).magnitude <= attackRange){
+				Debug.Log("Attacking.");
+				GameObject tongueParent = transform.FindChild("TongueParent").gameObject;
+				Debug.Log(tongueParent);
+				tongueParent.GetComponent<TongueController>().StartAttack();
+			}
 			break;
+
 		case AIState.ReturningToPatrol:
 			pathManager.goalPoint = patrolPoints[currentPatrolPoint].transform;
 
-			//If the cop is halfway back to their patrol
-			if((transform.position - patrolPoints[currentPatrolPoint].transform.position).magnitude <= distanceToStopChasingPlayer/2.0f){
-				currentState = AIState.Patrol;
+			if(!IsInvoking("GoBackToPatrol")){
+				//Set a timer for going back to just patrolling (so the cop doesn't flip between each state constantly)
+				Invoke("GoBackToPatrol", patrolReturnTimeout);
 			}
 			break;
 		}
-
-
-		/*if(CanSeePlayer()){
-			seesPlayer = true;
-			isChasingPlayer = true;
-			timeSinceLastSawPlayer = 0.0f;
-		}
-		else{
-			seesPlayer = false;
-			timeSinceLastSawPlayer += Time.deltaTime;
-		}
 		
-		if(isChasingPlayer){
-			pathManager.goalPoint = player.transform;
-			if(!seesPlayer && timeSinceLastSawPlayer >= chasePlayerTime){
-				isChasingPlayer = false;
-			}
-		}
-		else{
-			pathManager.goalPoint = patrolPoints[currentPatrolPoint].transform;
-		}*/
+	}
+
+	void GoBackToPatrol(){
+		currentState = AIState.Patrol;
 	}
 	
 	void OnTriggerEnter(Collider col){
@@ -147,6 +141,10 @@ public class CopAI : MonoBehaviour {
 	
 	GameObject RandomPatrolPoint(){
 		return patrolPoints[Random.Range(0,patrolPoints.Length)];
+	}
+
+	public AIState GetCurrentState(){
+		return currentState;
 	}
 	
 	bool CanSeePlayer(){
