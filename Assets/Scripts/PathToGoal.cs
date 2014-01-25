@@ -5,7 +5,7 @@ public class PathToGoal : MonoBehaviour {
 
 	public Transform goalPoint;
 	private NavMeshAgent navigation;
-
+	
 	// Use this for initialization
 	void Start () {
 		//goalPoint = GameObject.FindGameObjectWithTag("Player").transform;
