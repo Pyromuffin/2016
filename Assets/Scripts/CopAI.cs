@@ -94,7 +94,7 @@ public class CopAI : MonoBehaviour {
 			}
 			else{
 				lastPatrollingPosition = transform.position;
-				currentState = AIState.Patrol;
+				currentState = AIState.ReturningToPatrol;
 				timeSinceLastSawPlayer += Time.deltaTime;
 				timeSeeingPlayer = 0.0f;
 			}
