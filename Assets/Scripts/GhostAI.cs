@@ -16,6 +16,7 @@ public class GhostAI : MonoBehaviour {
 	public float seePlayerDistance = 50.0f;
 	public float seePlayerFOV = 0.6f; //Cosine of the FOV angle the ghost can see the player in
 	public float chasePlayerTime = 8.0f;
+	private float timeSinceLastSawPlayer = 0.0f;
 
 	// Use this for initialization
 	void Start () {
@@ -30,15 +31,17 @@ public class GhostAI : MonoBehaviour {
 		if(CanSeePlayer()){
 			seesPlayer = true;
 			isChasingPlayer = true;
+			timeSinceLastSawPlayer = 0.0f;
 		}
 		else{
 			seesPlayer = false;
+			timeSinceLastSawPlayer += Time.deltaTime;
 		}
 
 		if(isChasingPlayer){
 			pathManager.goalPoint = player.transform;
-			if(!seesPlayer){
-				Invoke("StopChasingPlayer", chasePlayerTime); //Set timer to stop chasing player
+			if(!seesPlayer && timeSinceLastSawPlayer >= chasePlayerTime){
+				isChasingPlayer = false;
 			}
 		}
 		else{
@@ -54,12 +57,6 @@ public class GhostAI : MonoBehaviour {
 
 	GameObject RandomPatrolPoint(){
 		return patrolPoints[Random.Range(0,patrolPoints.Length)];
-	}
-
-	void StopChasingPlayer(){
-		if(!seesPlayer){
-			isChasingPlayer = false;
-		}
 	}
 
 	bool CanSeePlayer(){
