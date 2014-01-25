@@ -344,11 +344,11 @@ MonoBehaviour:
     m_Bits: 4294967291
   seePlayerDistance: 50
   seePlayerFOVAngle: 80
-  distanceToStopChasingPlayer: 30
+  distanceToStopChasingPlayer: 20
   noticePlayerDistance: 20
   chasePlayerDistance: 10
   patrolReturnTimeout: 3
-  attackRange: 5
+  attackRange: 3.5
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1

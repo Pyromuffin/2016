@@ -5,8 +5,8 @@ public enum AIState{
 	Patrol,
 	NoticePlayer,
 	ChasingPlayer,
-	ReturningToPatrol
-	//AttackingPlayer
+	ReturningToPatrol,
+	AttackingPlayer
 };
 
 public class CopAI : MonoBehaviour {
@@ -36,7 +36,7 @@ public class CopAI : MonoBehaviour {
 	public float noticePlayerDistance = 20.0f;
 	public float chasePlayerDistance = 10.0f;
 	public float patrolReturnTimeout = 2.0f; //After going into return to patrol,
-	public float attackRange = 5.0f;
+	public float attackRange = 2.0f;
 	
 	// Use this for initialization
 	void Start () {
@@ -50,6 +50,7 @@ public class CopAI : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		Debug.Log(currentState);
+
 		bool canSeePlayer = CanSeePlayer();
 
 		float playerDist = (transform.position - player.transform.position).magnitude;
@@ -109,12 +110,24 @@ public class CopAI : MonoBehaviour {
 			if((transform.position - lastPatrollingPosition).magnitude >= distanceToStopChasingPlayer){
 				currentState = AIState.ReturningToPatrol;
 			}
-			if((transform.position - player.transform.position).magnitude <= attackRange){
-				Debug.Log("Attacking.");
+			if(playerDist <= attackRange){
+				currentState = AIState.AttackingPlayer;
+			}
+			break;
+
+		case AIState.AttackingPlayer:
+			//Don't path toward anything, and try to face the player
+			pathManager.goalPoint = null;
+			RotateTowardPlayer(turningSpeed);
+
+			if(playerDist > attackRange){
+				currentState = AIState.ChasingPlayer;
+			}
+			else{
 				GameObject tongueParent = transform.FindChild("TongueParent").gameObject;
-				Debug.Log(tongueParent);
 				tongueParent.GetComponent<TongueController>().StartAttack();
 			}
+
 			break;
 
 		case AIState.ReturningToPatrol:
