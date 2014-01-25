@@ -2,6 +2,32 @@
 using System.Collections;
 
 public class WallOffMeshLinkGizmos : MonoBehaviour {
+    ParticleSystem particles;
+    void Start()
+    {
+        particles = GetComponent<ParticleSystem>();
+    }
+
+    void OnTriggerEnter(Collider col)
+    {
+        var agent = col.GetComponent<NavMeshAgent>();
+        if (agent)
+        {
+            agent.speed = .5f;
+            particles.enableEmission = true;
+        }
+
+    }
+
+    void OnTriggerExit(Collider col)
+    {
+        var agent = col.GetComponent<NavMeshAgent>();
+        if (agent) { 
+            agent.speed = 3f;
+            particles.enableEmission = false;
+        }
+    }
+
 
 	void OnDrawGizmos(){
 		Gizmos.color = Color.white;
