@@ -2,22 +2,24 @@
 using System.Collections;
 
 public class CopAI : MonoBehaviour {
+	public enum AIState{
+		Patrol,
+		NoticePlayer,
+		ChasingPlayer,
+		AttackingPlayer
+	};
 	
 	private PathToGoal pathManager;
+	private StepSounds stepSounds;
 	private GameObject player;
 	
 	public GameObject[] patrolPoints;
-	private int currentPatrolPoint;
+	private GameObject currentPatrolPoint;
 	
-	private bool seesPlayer = false;
-	private bool isChasingPlayer = false;
+	private AIState currentState;
 	
-	public LayerMask seePlayerLayer;
-	public float seePlayerDistance = 50.0f;
-	public float seePlayerFOVAngle = 80.0f; 
-	private float seePlayerFOVCosine = 0.0f; //Cosine of the FOV angle the ghost can see the player in
-	public float chasePlayerTime = 12.0f;
-	private float timeSinceLastSawPlayer = 0.0f;
+	public float noticePlayerDistance = 20.0f;
+	public float chasePlayerDistance = 10.0f;
 	
 	// Use this for initialization
 	void Start () {
@@ -30,7 +32,21 @@ public class CopAI : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(CanSeePlayer()){
+
+		switch(currentState){
+		case AIState.Patrol:
+
+		case AIState.NoticePlayer:
+
+		case AIState.ChasingPlayer:
+
+		case AIState.AttackingPlayer:
+
+
+		}
+
+
+		/*if(CanSeePlayer()){
 			seesPlayer = true;
 			isChasingPlayer = true;
 			timeSinceLastSawPlayer = 0.0f;
@@ -48,7 +64,7 @@ public class CopAI : MonoBehaviour {
 		}
 		else{
 			pathManager.goalPoint = patrolPoints[currentPatrolPoint].transform;
-		}	
+		}*/
 	}
 	
 	void OnTriggerEnter(Collider col){
