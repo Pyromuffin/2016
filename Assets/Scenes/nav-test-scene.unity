@@ -1188,12 +1188,16 @@ MonoBehaviour:
   - {fileID: 1461777749}
   - {fileID: 1883581702}
   - {fileID: 772889392}
+  maxTimeInNoticeRange: 3
+  turningSpeed: 80
   seePlayerLayer:
     serializedVersion: 2
     m_Bits: 4294967291
   seePlayerDistance: 50
   seePlayerFOVAngle: 80
-  chasePlayerTime: 12
+  distanceToStopChasingPlayer: 30
+  noticePlayerDistance: 20
+  chasePlayerDistance: 10
 --- !u!54 &211713291
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1823,7 +1827,7 @@ Transform:
   m_PrefabInternal: {fileID: 967795285}
   m_GameObject: {fileID: 340785681}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -29.7707825, y: 8.53541866e-16, z: 21.7643929}
+  m_LocalPosition: {x: -29.7707825, y: 8.53541866e-16, z: -33.0292244}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 376811910}
@@ -2817,6 +2821,10 @@ Prefab:
       propertyPath: seePlayerLayer.m_Bits
       value: 4294967291
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a6e61a055336f2149a3381b953794436, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a6e61a055336f2149a3381b953794436, type: 2}
   m_RootGameObject: {fileID: 539413708}
@@ -3102,6 +3110,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a6e61a055336f2149a3381b953794436, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a6e61a055336f2149a3381b953794436, type: 2}
   m_RootGameObject: {fileID: 1109845940}
@@ -3133,7 +3145,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!195 &539413709
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -4826,7 +4838,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 261e12ed07bba8648bdcf1de5e3113e9, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 21.7643929
+      value: -33.0292244
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 261e12ed07bba8648bdcf1de5e3113e9, type: 2}
       propertyPath: m_LocalRotation.x
@@ -5701,7 +5713,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!195 &1109845941
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -7023,6 +7035,10 @@ Prefab:
       propertyPath: lowpassLevelCustomCurve.m_Curve.Array.data[0].value
       value: .772272706
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a6e61a055336f2149a3381b953794436, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a6e61a055336f2149a3381b953794436, type: 2}
   m_RootGameObject: {fileID: 1432514250}
@@ -7270,7 +7286,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!195 &1432514251
 NavMeshAgent:
   m_ObjectHideFlags: 0

@@ -14,8 +14,13 @@ public class PathToGoal : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		//Setting goalPoint to null will stop pathing until it is not null
 		if(goalPoint != null){
+			navigation.enabled = true;
 			navigation.SetDestination(goalPoint.position);
+		}
+		else{
+			navigation.enabled = false;
 		}
 	}
 }

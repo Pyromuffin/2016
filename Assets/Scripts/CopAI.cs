@@ -6,7 +6,8 @@ public class CopAI : MonoBehaviour {
 		Patrol,
 		NoticePlayer,
 		ChasingPlayer,
-		AttackingPlayer
+		ReturningToPatrol
+		//AttackingPlayer
 	};
 	
 	private PathToGoal pathManager;
@@ -14,10 +15,24 @@ public class CopAI : MonoBehaviour {
 	private GameObject player;
 	
 	public GameObject[] patrolPoints;
-	private GameObject currentPatrolPoint;
+	private int currentPatrolPoint;
 	
 	private AIState currentState;
-	
+
+	private Vector3 lastPatrollingPosition;
+
+	private float timeSinceLastSawPlayer = 0.0f;
+	private float timeSeeingPlayer = 0.0f;
+	public float maxTimeInNoticeRange = 3.0f;
+
+	public float turningSpeed = 80.0f;
+
+	public LayerMask seePlayerLayer;
+	public float seePlayerDistance = 40.0f;
+	public float seePlayerFOVAngle = 80.0f;
+	private float seePlayerFOVCosine = 0.0f; //Cosine of the FOV angle the ghost can see the player in
+
+	public float distanceToStopChasingPlayer = 30.0f;
 	public float noticePlayerDistance = 20.0f;
 	public float chasePlayerDistance = 10.0f;
 	
@@ -33,16 +48,73 @@ public class CopAI : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+		Debug.Log(currentState);
+		bool canSeePlayer = CanSeePlayer();
+
+		float playerDist = (transform.position - player.transform.position).magnitude;
+
 		switch(currentState){
 		case AIState.Patrol:
+			pathManager.goalPoint = patrolPoints[currentPatrolPoint].transform;
+
+			if(canSeePlayer){
+				timeSinceLastSawPlayer = 0.0f;
+				timeSeeingPlayer += Time.deltaTime;
+
+				if(playerDist < noticePlayerDistance){
+					currentState = AIState.NoticePlayer;
+				}
+				if(playerDist < chasePlayerDistance){
+					currentState = AIState.ChasingPlayer;
+				}
+			}
+			else{
+				timeSinceLastSawPlayer += Time.deltaTime;
+				timeSeeingPlayer = 0.0f;
+			}
+			break;
+
 
 		case AIState.NoticePlayer:
+			pathManager.goalPoint = null;
+			RotateTowardPlayer(turningSpeed);
+
+			if(canSeePlayer){
+				timeSinceLastSawPlayer = 0.0f;
+				timeSeeingPlayer += Time.deltaTime;
+
+				if(playerDist < noticePlayerDistance){
+					if(timeSeeingPlayer >= maxTimeInNoticeRange){
+						currentState = AIState.ChasingPlayer;
+					}
+				}
+				if(playerDist < chasePlayerDistance){
+					currentState = AIState.ChasingPlayer;
+				}
+			}
+			else{
+				lastPatrollingPosition = transform.position;
+				currentState = AIState.Patrol;
+				timeSinceLastSawPlayer += Time.deltaTime;
+				timeSeeingPlayer = 0.0f;
+			}
+			break;
 
 		case AIState.ChasingPlayer:
+			pathManager.goalPoint = player.transform;
 
-		case AIState.AttackingPlayer:
+			if((transform.position - lastPatrollingPosition).magnitude >= distanceToStopChasingPlayer){
+				currentState = AIState.ReturningToPatrol;
+			}
+			break;
+		case AIState.ReturningToPatrol:
+			pathManager.goalPoint = patrolPoints[currentPatrolPoint].transform;
 
-
+			//If the cop is halfway back to their patrol
+			if((transform.position - patrolPoints[currentPatrolPoint].transform.position).magnitude <= distanceToStopChasingPlayer/2.0f){
+				currentState = AIState.Patrol;
+			}
+			break;
 		}
 
 
@@ -81,7 +153,6 @@ public class CopAI : MonoBehaviour {
 		RaycastHit hit;
 		//If Raycast its something
 		if(Physics.Raycast(transform.position, (player.transform.position - transform.position), out hit, seePlayerDistance, seePlayerLayer)){
-			Debug.Log(hit.transform);
 			//If it hits player
 			if(hit.transform.tag == "Player"){ 
 				//Find the vector towards the player, while ignoring the y-axis
@@ -89,7 +160,7 @@ public class CopAI : MonoBehaviour {
 				Vector3 playerDirectionWithoutY = playerDirection;
 				playerDirectionWithoutY.y = 0.0f;
 				
-				//If the player is within the ghost's FOV
+				//If the player is within the cop's FOV
 				if(Vector3.Dot(playerDirectionWithoutY.normalized, transform.forward) > seePlayerFOVCosine){
 					return true;
 				}
@@ -97,5 +168,11 @@ public class CopAI : MonoBehaviour {
 		}
 		
 		return false;
+	}
+
+	void RotateTowardPlayer(float maxDegreesDelta){
+		transform.rotation = Quaternion.RotateTowards(transform.rotation, 
+		                                              Quaternion.LookRotation(player.transform.position - transform.position), 
+		                                              maxDegreesDelta);
 	}
 }
