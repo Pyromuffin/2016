@@ -63476,7 +63476,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1045436244}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 77.5152206, y: 9.20989609, z: 22.1771088}
+  m_LocalPosition: {x: 164.008484, y: 112.57901, z: 22.177124}
   m_LocalScale: {x: .680092931, y: .680092931, z: .680092931}
   m_Children:
   - {fileID: 1048784098}
@@ -74431,7 +74431,7 @@ MonoBehaviour:
     version: 1
     font: {fileID: 11400000, guid: cb3bf0ad5e92744d6856da9a7d5a3125, type: 2}
     text: Ominous Message.
-    color: {r: 0, g: 0, b: 0, a: 1}
+    color: {r: 1, g: 1, b: 1, a: 1}
     color2: {r: 1, g: 1, b: 1, a: 1}
     useGradient: 0
     textureGradient: 0
@@ -116634,7 +116634,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2008771950}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 35.3219147, y: 27.6719723, z: 23.3450775}
+  m_LocalPosition: {x: 117.959602, y: 124.302071, z: 23.3450928}
   m_LocalScale: {x: 190.279694, y: 171.061981, z: 171.061981}
   m_Children:
   - {fileID: 101324070}

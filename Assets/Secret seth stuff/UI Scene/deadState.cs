@@ -26,6 +26,7 @@ public class deadState : MonoBehaviour {
 
 	// Use this for initialization
 	void Awake () {
+        
 		text = transform.Find ("txtOminous").GetComponent<tk2dTextMesh> ();
 		text.text = ominousMessages [Random.Range (0, ominousMessages.Length)];
 		btnRestart = GameObject.Find("btnRestart").GetComponent<tk2dUIItem> ();
@@ -45,12 +46,16 @@ public class deadState : MonoBehaviour {
 	}
 
 	public static void ShowDeath(){
+        Screen.lockCursor = false;
+        Screen.showCursor = true;
 		btnRestart.gameObject.SetActive (true);
 		btnQuit.gameObject.SetActive (true);
 		text.gameObject.SetActive (true);
 	}
 
 	public static void ShowVictory(){
+        Screen.lockCursor = false;
+        Screen.showCursor = true;
 		btnRestart.gameObject.SetActive (true);
 		btnQuit.gameObject.SetActive (true);
 		txtVictory.gameObject.SetActive (true);
