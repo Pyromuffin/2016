@@ -25,14 +25,6 @@ public class HealthBar : MonoBehaviour {
 		healthHearts = healthHearts.OrderBy (u => u.transform.position.x).ToList ();
 		healthHearts.Reverse ();
 	}
-
-	//Resets health
-	public void SetFullHealth(){
-		foreach(tk2dSprite heart in healthHearts){
-			heart.SetSprite("heart_full");
-		}
-	}
-
 	//Remove some HP
 	public void DecrementHealth(int delta){
 
