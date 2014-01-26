@@ -447,7 +447,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   finalScale: 20
-  duration: .800000012
+  duration: .400000006
 --- !u!136 &13600000
 CapsuleCollider:
   m_ObjectHideFlags: 1
@@ -512,7 +512,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_Radius: .500000119
-  m_Speed: 2.5
+  m_Speed: 4
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
