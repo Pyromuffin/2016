@@ -44,7 +44,7 @@ public class StepSounds : MonoBehaviour {
             }
 
             if(!ghost)
-                audio.PlayOneShot(stepSounds[Random.Range(0, stepSounds.Length)]);
+                audio.PlayOneShot(stepSounds[Random.Range(0, stepSounds.Length)], kid? .3f: 1);
             previousStepPosition = transform.position;
 
         }

@@ -13,7 +13,7 @@ public class CopAI : MonoBehaviour {
 	private PathToGoal pathManager;
 	private StepSounds stepSounds;
 	private GameObject player;
-    public AudioClip lickSound;
+    public AudioClip lickSound, hey;
 
 	public GameObject[] patrolPoints;
 	private int currentPatrolPoint;
@@ -91,10 +91,16 @@ public class CopAI : MonoBehaviour {
 
 				if(playerDist < noticePlayerDistance){
 					if(timeSeeingPlayer >= maxTimeInNoticeRange){
+                        audio.pitch = Random.Range(.2f, .5f);
+                        audio.PlayOneShot(hey,2);
+                        audio.pitch = 1;
 						currentState = AIState.ChasingPlayer;
 					}
 				}
 				if(playerDist < chasePlayerDistance){
+                    audio.pitch = Random.Range(.2f, .5f);
+                    audio.PlayOneShot(hey, 2);
+                    audio.pitch = 1;
 					currentState = AIState.ChasingPlayer;
 				}
 			}

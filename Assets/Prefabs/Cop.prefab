@@ -735,7 +735,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -16.9711761, y: 0, z: -92.2429352}
+  m_LocalPosition: {x: -21.4608917, y: 0, z: -125.033981}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400092}
@@ -1541,9 +1541,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lickSound: {fileID: 8300000, guid: 2b3b5b998cf24994baebe5c1df75eb60, type: 3}
+  hey: {fileID: 8300000, guid: 40d065b06bb7e114f9a2d04a4fd01b85, type: 3}
   patrolPoints:
-  - {fileID: 0}
-  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   maxTimeInNoticeRange: 3
