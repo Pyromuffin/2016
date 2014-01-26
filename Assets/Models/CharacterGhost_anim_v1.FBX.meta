@@ -1,0 +1,353 @@
+fileFormatVersion: 2
+guid: 1cf2d03e37e8d2f40b33a0d574fbf6b2
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: BipGhost
+    100002: BipGhost Footsteps
+    100004: BipGhost Head
+    100006: BipGhost HeadNub
+    100008: BipGhost L Calf
+    100010: BipGhost L Clavicle
+    100012: BipGhost L Finger0
+    100014: BipGhost L Finger01
+    100016: BipGhost L Finger02
+    100018: BipGhost L Finger03
+    100020: BipGhost L Finger1
+    100022: BipGhost L Finger11
+    100024: BipGhost L Finger12
+    100026: BipGhost L Finger13
+    100028: BipGhost L Foot
+    100030: BipGhost L Forearm
+    100032: BipGhost L Hand
+    100034: BipGhost L Thigh
+    100036: BipGhost L Toe0
+    100038: BipGhost L Toe0Nub
+    100040: BipGhost L UpperArm
+    100042: BipGhost Neck
+    100044: BipGhost Pelvis
+    100046: BipGhost R Calf
+    100048: BipGhost R Clavicle
+    100050: BipGhost R Finger0
+    100052: BipGhost R Finger01
+    100054: BipGhost R Finger02
+    100056: BipGhost R Finger03
+    100058: BipGhost R Finger1
+    100060: BipGhost R Finger11
+    100062: BipGhost R Finger12
+    100064: BipGhost R Finger13
+    100066: BipGhost R Foot
+    100068: BipGhost R Forearm
+    100070: BipGhost R Hand
+    100072: BipGhost R Thigh
+    100074: BipGhost R Toe0
+    100076: BipGhost R Toe0Nub
+    100078: BipGhost R UpperArm
+    100080: BipGhost Spine
+    100082: BipGhost Spine1
+    100084: BipGhost Spine2
+    100086: BipGhost Tail
+    100088: BipGhost Tail1
+    100090: BipGhost Tail2
+    100092: BipGhost Tail3
+    100094: BipGhost Tail4
+    100096: BipGhost TailNub
+    100098: Box001
+    100100: //RootNode
+    400000: BipGhost
+    400002: BipGhost Footsteps
+    400004: BipGhost Head
+    400006: BipGhost HeadNub
+    400008: BipGhost L Calf
+    400010: BipGhost L Clavicle
+    400012: BipGhost L Finger0
+    400014: BipGhost L Finger01
+    400016: BipGhost L Finger02
+    400018: BipGhost L Finger03
+    400020: BipGhost L Finger1
+    400022: BipGhost L Finger11
+    400024: BipGhost L Finger12
+    400026: BipGhost L Finger13
+    400028: BipGhost L Foot
+    400030: BipGhost L Forearm
+    400032: BipGhost L Hand
+    400034: BipGhost L Thigh
+    400036: BipGhost L Toe0
+    400038: BipGhost L Toe0Nub
+    400040: BipGhost L UpperArm
+    400042: BipGhost Neck
+    400044: BipGhost Pelvis
+    400046: BipGhost R Calf
+    400048: BipGhost R Clavicle
+    400050: BipGhost R Finger0
+    400052: BipGhost R Finger01
+    400054: BipGhost R Finger02
+    400056: BipGhost R Finger03
+    400058: BipGhost R Finger1
+    400060: BipGhost R Finger11
+    400062: BipGhost R Finger12
+    400064: BipGhost R Finger13
+    400066: BipGhost R Foot
+    400068: BipGhost R Forearm
+    400070: BipGhost R Hand
+    400072: BipGhost R Thigh
+    400074: BipGhost R Toe0
+    400076: BipGhost R Toe0Nub
+    400078: BipGhost R UpperArm
+    400080: BipGhost Spine
+    400082: BipGhost Spine1
+    400084: BipGhost Spine2
+    400086: BipGhost Tail
+    400088: BipGhost Tail1
+    400090: BipGhost Tail2
+    400092: BipGhost Tail3
+    400094: BipGhost Tail4
+    400096: BipGhost TailNub
+    400098: Box001
+    400100: //RootNode
+    4300000: Box001
+    7400000: Idle
+    9500000: //RootNode
+    13700000: Box001
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Idle
+      takeName: Take 001
+      firstFrame: 10
+      lastFrame: 70
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: BipGhost
+        weight: 1
+      - path: BipGhost/BipGhost Footsteps
+        weight: 1
+      - path: BipGhost/BipGhost Pelvis
+        weight: 1
+      - path: BipGhost/BipGhost Pelvis/BipGhost Spine
+        weight: 1
+      - path: BipGhost/BipGhost Pelvis/BipGhost Spine/BipGhost L Thigh
+        weight: 1
+      - path: BipGhost/BipGhost Pelvis/BipGhost Spine/BipGhost L Thigh/BipGhost L
+          Calf
+        weight: 1
+      - path: BipGhost/BipGhost Pelvis/BipGhost Spine/BipGhost L Thigh/BipGhost L
+          Calf/BipGhost L Foot
+        weight: 1
+      - path: BipGhost/BipGhost Pelvis/BipGhost Spine/BipGhost L Thigh/BipGhost L
+          Calf/BipGhost L Foot/BipGhost L Toe0
+        weight: 1
+      - path: BipGhost/BipGhost Pelvis/BipGhost Spine/BipGhost L Thigh/BipGhost L
+          Calf/BipGhost L Foot/BipGhost L Toe0/BipGhost L Toe0Nub
+        weight: 1
+      - path: BipGhost/BipGhost Pelvis/BipGhost Spine/BipGhost R Thigh
+        weight: 1
+      - path: BipGhost/BipGhost Pelvis/BipGhost Spine/BipGhost R Thigh/BipGhost R
+          Calf
+        weight: 1
+      - path: BipGhost/BipGhost Pelvis/BipGhost Spine/BipGhost R Thigh/BipGhost R
+          Calf/BipGhost R Foot
+        weight: 1
+      - path: BipGhost/BipGhost Pelvis/BipGhost Spine/BipGhost R Thigh/BipGhost R
+          Calf/BipGhost R Foot/BipGhost R Toe0
+        weight: 1
+      - path: BipGhost/BipGhost Pelvis/BipGhost Spine/BipGhost R Thigh/BipGhost R
+          Calf/BipGhost R Foot/BipGhost R Toe0/BipGhost R Toe0Nub
+        weight: 1
+      - path: BipGhost/BipGhost Pelvis/BipGhost Spine/BipGhost Spine1
+        weight: 1
+      - path: BipGhost/BipGhost Pelvis/BipGhost Spine/BipGhost Spine1/BipGhost Spine2
+        weight: 1
+      - path: BipGhost/BipGhost Pelvis/BipGhost Spine/BipGhost Spine1/BipGhost Spine2/BipGhost
+          Neck
+        weight: 1
+      - path: BipGhost/BipGhost Pelvis/BipGhost Spine/BipGhost Spine1/BipGhost Spine2/BipGhost
+          Neck/BipGhost Head
+        weight: 1
+      - path: BipGhost/BipGhost Pelvis/BipGhost Spine/BipGhost Spine1/BipGhost Spine2/BipGhost
+          Neck/BipGhost Head/BipGhost HeadNub
+        weight: 1
+      - path: BipGhost/BipGhost Pelvis/BipGhost Spine/BipGhost Spine1/BipGhost Spine2/BipGhost
+          Neck/BipGhost L Clavicle
+        weight: 1
+      - path: BipGhost/BipGhost Pelvis/BipGhost Spine/BipGhost Spine1/BipGhost Spine2/BipGhost
+          Neck/BipGhost L Clavicle/BipGhost L UpperArm
+        weight: 1
+      - path: BipGhost/BipGhost Pelvis/BipGhost Spine/BipGhost Spine1/BipGhost Spine2/BipGhost
+          Neck/BipGhost L Clavicle/BipGhost L UpperArm/BipGhost L Forearm
+        weight: 1
+      - path: BipGhost/BipGhost Pelvis/BipGhost Spine/BipGhost Spine1/BipGhost Spine2/BipGhost
+          Neck/BipGhost L Clavicle/BipGhost L UpperArm/BipGhost L Forearm/BipGhost
+          L Hand
+        weight: 1
+      - path: BipGhost/BipGhost Pelvis/BipGhost Spine/BipGhost Spine1/BipGhost Spine2/BipGhost
+          Neck/BipGhost L Clavicle/BipGhost L UpperArm/BipGhost L Forearm/BipGhost
+          L Hand/BipGhost L Finger0
+        weight: 1
+      - path: BipGhost/BipGhost Pelvis/BipGhost Spine/BipGhost Spine1/BipGhost Spine2/BipGhost
+          Neck/BipGhost L Clavicle/BipGhost L UpperArm/BipGhost L Forearm/BipGhost
+          L Hand/BipGhost L Finger0/BipGhost L Finger01
+        weight: 1
+      - path: BipGhost/BipGhost Pelvis/BipGhost Spine/BipGhost Spine1/BipGhost Spine2/BipGhost
+          Neck/BipGhost L Clavicle/BipGhost L UpperArm/BipGhost L Forearm/BipGhost
+          L Hand/BipGhost L Finger0/BipGhost L Finger01/BipGhost L Finger02
+        weight: 1
+      - path: BipGhost/BipGhost Pelvis/BipGhost Spine/BipGhost Spine1/BipGhost Spine2/BipGhost
+          Neck/BipGhost L Clavicle/BipGhost L UpperArm/BipGhost L Forearm/BipGhost
+          L Hand/BipGhost L Finger0/BipGhost L Finger01/BipGhost L Finger02/BipGhost
+          L Finger03
+        weight: 1
+      - path: BipGhost/BipGhost Pelvis/BipGhost Spine/BipGhost Spine1/BipGhost Spine2/BipGhost
+          Neck/BipGhost L Clavicle/BipGhost L UpperArm/BipGhost L Forearm/BipGhost
+          L Hand/BipGhost L Finger1
+        weight: 1
+      - path: BipGhost/BipGhost Pelvis/BipGhost Spine/BipGhost Spine1/BipGhost Spine2/BipGhost
+          Neck/BipGhost L Clavicle/BipGhost L UpperArm/BipGhost L Forearm/BipGhost
+          L Hand/BipGhost L Finger1/BipGhost L Finger11
+        weight: 1
+      - path: BipGhost/BipGhost Pelvis/BipGhost Spine/BipGhost Spine1/BipGhost Spine2/BipGhost
+          Neck/BipGhost L Clavicle/BipGhost L UpperArm/BipGhost L Forearm/BipGhost
+          L Hand/BipGhost L Finger1/BipGhost L Finger11/BipGhost L Finger12
+        weight: 1
+      - path: BipGhost/BipGhost Pelvis/BipGhost Spine/BipGhost Spine1/BipGhost Spine2/BipGhost
+          Neck/BipGhost L Clavicle/BipGhost L UpperArm/BipGhost L Forearm/BipGhost
+          L Hand/BipGhost L Finger1/BipGhost L Finger11/BipGhost L Finger12/BipGhost
+          L Finger13
+        weight: 1
+      - path: BipGhost/BipGhost Pelvis/BipGhost Spine/BipGhost Spine1/BipGhost Spine2/BipGhost
+          Neck/BipGhost R Clavicle
+        weight: 1
+      - path: BipGhost/BipGhost Pelvis/BipGhost Spine/BipGhost Spine1/BipGhost Spine2/BipGhost
+          Neck/BipGhost R Clavicle/BipGhost R UpperArm
+        weight: 1
+      - path: BipGhost/BipGhost Pelvis/BipGhost Spine/BipGhost Spine1/BipGhost Spine2/BipGhost
+          Neck/BipGhost R Clavicle/BipGhost R UpperArm/BipGhost R Forearm
+        weight: 1
+      - path: BipGhost/BipGhost Pelvis/BipGhost Spine/BipGhost Spine1/BipGhost Spine2/BipGhost
+          Neck/BipGhost R Clavicle/BipGhost R UpperArm/BipGhost R Forearm/BipGhost
+          R Hand
+        weight: 1
+      - path: BipGhost/BipGhost Pelvis/BipGhost Spine/BipGhost Spine1/BipGhost Spine2/BipGhost
+          Neck/BipGhost R Clavicle/BipGhost R UpperArm/BipGhost R Forearm/BipGhost
+          R Hand/BipGhost R Finger0
+        weight: 1
+      - path: BipGhost/BipGhost Pelvis/BipGhost Spine/BipGhost Spine1/BipGhost Spine2/BipGhost
+          Neck/BipGhost R Clavicle/BipGhost R UpperArm/BipGhost R Forearm/BipGhost
+          R Hand/BipGhost R Finger0/BipGhost R Finger01
+        weight: 1
+      - path: BipGhost/BipGhost Pelvis/BipGhost Spine/BipGhost Spine1/BipGhost Spine2/BipGhost
+          Neck/BipGhost R Clavicle/BipGhost R UpperArm/BipGhost R Forearm/BipGhost
+          R Hand/BipGhost R Finger0/BipGhost R Finger01/BipGhost R Finger02
+        weight: 1
+      - path: BipGhost/BipGhost Pelvis/BipGhost Spine/BipGhost Spine1/BipGhost Spine2/BipGhost
+          Neck/BipGhost R Clavicle/BipGhost R UpperArm/BipGhost R Forearm/BipGhost
+          R Hand/BipGhost R Finger0/BipGhost R Finger01/BipGhost R Finger02/BipGhost
+          R Finger03
+        weight: 1
+      - path: BipGhost/BipGhost Pelvis/BipGhost Spine/BipGhost Spine1/BipGhost Spine2/BipGhost
+          Neck/BipGhost R Clavicle/BipGhost R UpperArm/BipGhost R Forearm/BipGhost
+          R Hand/BipGhost R Finger1
+        weight: 1
+      - path: BipGhost/BipGhost Pelvis/BipGhost Spine/BipGhost Spine1/BipGhost Spine2/BipGhost
+          Neck/BipGhost R Clavicle/BipGhost R UpperArm/BipGhost R Forearm/BipGhost
+          R Hand/BipGhost R Finger1/BipGhost R Finger11
+        weight: 1
+      - path: BipGhost/BipGhost Pelvis/BipGhost Spine/BipGhost Spine1/BipGhost Spine2/BipGhost
+          Neck/BipGhost R Clavicle/BipGhost R UpperArm/BipGhost R Forearm/BipGhost
+          R Hand/BipGhost R Finger1/BipGhost R Finger11/BipGhost R Finger12
+        weight: 1
+      - path: BipGhost/BipGhost Pelvis/BipGhost Spine/BipGhost Spine1/BipGhost Spine2/BipGhost
+          Neck/BipGhost R Clavicle/BipGhost R UpperArm/BipGhost R Forearm/BipGhost
+          R Hand/BipGhost R Finger1/BipGhost R Finger11/BipGhost R Finger12/BipGhost
+          R Finger13
+        weight: 1
+      - path: BipGhost/BipGhost Pelvis/BipGhost Spine/BipGhost Tail
+        weight: 1
+      - path: BipGhost/BipGhost Pelvis/BipGhost Spine/BipGhost Tail/BipGhost Tail1
+        weight: 1
+      - path: BipGhost/BipGhost Pelvis/BipGhost Spine/BipGhost Tail/BipGhost Tail1/BipGhost
+          Tail2
+        weight: 1
+      - path: BipGhost/BipGhost Pelvis/BipGhost Spine/BipGhost Tail/BipGhost Tail1/BipGhost
+          Tail2/BipGhost Tail3
+        weight: 1
+      - path: BipGhost/BipGhost Pelvis/BipGhost Spine/BipGhost Tail/BipGhost Tail1/BipGhost
+          Tail2/BipGhost Tail3/BipGhost Tail4
+        weight: 1
+      - path: BipGhost/BipGhost Pelvis/BipGhost Spine/BipGhost Tail/BipGhost Tail1/BipGhost
+          Tail2/BipGhost Tail3/BipGhost Tail4/BipGhost TailNub
+        weight: 1
+      - path: Box001
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 

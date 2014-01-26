@@ -54,7 +54,7 @@ GameObject:
   - 23: {fileID: 2300004}
   - 114: {fileID: 11400006}
   - 54: {fileID: 5400002}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: TongueGeom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -70,7 +70,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 400006}
   - 114: {fileID: 11400008}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: TongueParent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1583,6 +1583,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: bb676f061e733ec43b004111e628ce13, type: 3}
   - {fileID: 8300000, guid: c5bb0f3d5db632f4fbdff21dea9390c3, type: 3}
   - {fileID: 8300000, guid: f27eedb65a7a54b429ce87f9aee5fd9e, type: 3}
+  ghost: 0
+  kid: 0
 --- !u!114 &11400006
 MonoBehaviour:
   m_ObjectHideFlags: 1

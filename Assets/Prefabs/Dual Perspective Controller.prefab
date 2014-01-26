@@ -194,6 +194,7 @@ GameObject:
   - 114: {fileID: 11400000}
   - 114: {fileID: 11400022}
   - 114: {fileID: 11400024}
+  - 82: {fileID: 8200004}
   m_Layer: 12
   m_Name: OVRPlayerController
   m_TagString: Player
@@ -2784,6 +2785,64 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+--- !u!82 &8200004
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100024}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: .284000009
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!92 &9200000
 Behaviour:
   m_ObjectHideFlags: 1
@@ -3049,6 +3108,18 @@ MonoBehaviour:
   effectTime: 1
   blurStrength: 10
   vignetteStrength: 10
+  ouchs:
+  - {fileID: 8300000, guid: 07007f7a9f80a8b4886c5d38fcd12bc9, type: 3}
+  - {fileID: 8300000, guid: 1172053a38a67334b8f86d622f59b629, type: 3}
+  - {fileID: 8300000, guid: 1a176771d8d99b145b178b8ec15d7fce, type: 3}
+  - {fileID: 8300000, guid: 47ac381c31861ef45a8cc5985c57305d, type: 3}
+  - {fileID: 8300000, guid: 55a4dfd2c546d0640948642d456c82ef, type: 3}
+  - {fileID: 8300000, guid: 5ab1510d07a8b7d4fa33a2ee4273e93d, type: 3}
+  - {fileID: 8300000, guid: 86c43a754a070854aa9d70e36210b628, type: 3}
+  - {fileID: 8300000, guid: 9f536334b96d74c4995e902107a19495, type: 3}
+  - {fileID: 8300000, guid: e74e65f2e8235454982477d0318f1c9b, type: 3}
+  - {fileID: 8300000, guid: f35360f3614a23f4eaf04ac71f4133c1, type: 3}
+  dead: 0
 --- !u!114 &11400024
 MonoBehaviour:
   m_ObjectHideFlags: 1

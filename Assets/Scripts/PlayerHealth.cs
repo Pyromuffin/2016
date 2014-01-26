@@ -9,7 +9,7 @@ public class PlayerHealth : MonoBehaviour {
     public float effectTime = 1f;
     public float blurStrength, vignetteStrength;
     public AudioClip[] ouchs;
-
+    public bool dead = false;
 	HealthBar healthBar;
 	GameObject deadState;
     Vignetting[] vignettes;
@@ -47,18 +47,26 @@ public class PlayerHealth : MonoBehaviour {
     }
 
 	public void TongueAttack(){
-		Debug.Log ("TongueAttack in player");
-		currentHealth--;
-		healthBar.DecrementHealth (1);
-        StartCoroutine(hitEffect());
-		CheckDeath ();
+        if (!dead)
+        {
+            Debug.Log("TongueAttack in player");
+            currentHealth--;
+            healthBar.DecrementHealth(1);
+            StartCoroutine(hitEffect());
+            CheckDeath();
+        }
 	}
 
 	public void GhostAttack(){
-		Debug.Log ("GhostAttack in player");
-		currentHealth -= 2;
-		healthBar.DecrementHealth (2);
-		CheckDeath ();
+        if (!dead) 
+        { 
+            Debug.Log ("GhostAttack in player");
+		    currentHealth -= 2;
+        
+            StartCoroutine(hitEffect());
+		    healthBar.DecrementHealth (2);
+		    CheckDeath ();
+        }
 	}
 
 	//Are we dead? If so: do dead things!
@@ -66,6 +74,24 @@ public class PlayerHealth : MonoBehaviour {
 		if(currentHealth <= 0){
 			//show dead state
 			Debug.Log ("DEAD");
+            dead = true;
+            foreach (var v in vignettes)
+            {
+                StopAllCoroutines();
+                v.intensity = 20;
+                v.blur = 50;
+                v.blurSpread = 20;
+                v.blurDistance = 30;
+            }
+            var cops = FindObjectsOfType<CopAI>();
+            var ghosts = FindObjectsOfType<GhostAI>();
+
+            foreach (var c in cops)
+                c.enabled = false;
+            foreach (var g in ghosts)
+                g.enabled = false;
+
+            FindObjectOfType<OVRPlayerController>().enabled = false;
 			deadState.SetActive(true);
 			
 			//Lose Game stuff

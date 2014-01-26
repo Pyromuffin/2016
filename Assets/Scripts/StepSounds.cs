@@ -10,7 +10,8 @@ public class StepSounds : MonoBehaviour {
     GameObject player;
     AudioLowPassFilter lowPass;
     AudioReverbFilter reverb;
-
+    public bool ghost = false;
+    public bool kid = false;
 	// Use this for initialization
 	void Start () {
         previousStepPosition = transform.position;
@@ -25,21 +26,25 @@ public class StepSounds : MonoBehaviour {
 
         if ((previousStepPosition - transform.position).magnitude >= stepDistance)
         {
-           
-            if (Physics.Linecast(player.transform.position, transform.position, 1 << LayerMask.NameToLayer("Walls") ) )
+            if (!kid)
             {
-                //there is something between 
-                lowPass.enabled = true;
-                audio.volume = .5f;
-                reverb.enabled = true;
+                if (Physics.Linecast(player.transform.position, transform.position, 1 << LayerMask.NameToLayer("Walls")))
+                {
+                    //there is something between 
+                    lowPass.enabled = true;
+                    audio.volume = .5f;
+                    reverb.enabled = true;
+                }
+                else
+                {
+                    lowPass.enabled = false;
+                    reverb.enabled = false;
+                    audio.volume = 1;
+                }
             }
-            else
-            {
-                lowPass.enabled = false;
-                reverb.enabled = false;
-                audio.volume = 1;
-            }
-            audio.PlayOneShot(stepSounds[Random.Range(0, stepSounds.Length)]);
+
+            if(!ghost)
+                audio.PlayOneShot(stepSounds[Random.Range(0, stepSounds.Length)]);
             previousStepPosition = transform.position;
 
         }
