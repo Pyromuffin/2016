@@ -25,7 +25,7 @@ public class deadState : MonoBehaviour {
 							  "Is this the world we wish to live in?"};
 
 	// Use this for initialization
-	void Start () {
+	void Awake () {
 		text = transform.Find ("txtOminous").GetComponent<tk2dTextMesh> ();
 		text.text = ominousMessages [Random.Range (0, ominousMessages.Length)];
 		btnRestart = GameObject.Find("btnRestart").GetComponent<tk2dUIItem> ();

@@ -35,7 +35,7 @@ GameObject:
   - 33: {fileID: 3300000}
   - 23: {fileID: 2300000}
   m_Layer: 9
-  m_Name: CopTongue_mesh
+  m_Name: CopTongue_mesh_UV
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -722,7 +722,7 @@ GameObject:
   - 4: {fileID: 400092}
   - 95: {fileID: 9500000}
   m_Layer: 9
-  m_Name: CharacterCop_anim_v1
+  m_Name: CharacterCop_anim_v2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -735,7 +735,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 18.0030975, y: 0, z: -51.2177544}
+  m_LocalPosition: {x: 5.75485134, y: 0, z: -6.11196899}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400092}
@@ -760,7 +760,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100004}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: .100000001}
+  m_LocalPosition: {x: 0, y: -.0359432697, z: .0999984741}
   m_LocalScale: {x: .400000006, y: .200000003, z: .200000003}
   m_Children: []
   m_Father: {fileID: 400006}
@@ -771,7 +771,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100006}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: .239999995, z: 0}
+  m_LocalPosition: {x: 0, y: .30927515, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400004}
@@ -984,7 +984,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100050}
   m_LocalRotation: {x: .707106829, y: -5.17000444e-07, z: -.707106829, w: -5.17000444e-07}
-  m_LocalPosition: {x: -.540181041, y: .192292854, z: 6.10351549e-07}
+  m_LocalPosition: {x: -.532923937, y: .125890091, z: 6.10351549e-07}
   m_LocalScale: {x: .99999994, y: .99999994, z: 1}
   m_Children: []
   m_Father: {fileID: 400050}
@@ -1226,8 +1226,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
   m_LocalRotation: {x: 0, y: 0, z: -.707106352, w: .707107306}
-  m_LocalPosition: {x: .0326566584, y: .0109576778, z: .28041473}
-  m_LocalScale: {x: .99999994, y: .49999997, z: 1}
+  m_LocalPosition: {x: .0326566398, y: .0109576685, z: .28041473}
+  m_LocalScale: {x: .999999881, y: .49999994, z: 1}
   m_Children: []
   m_Father: {fileID: 400090}
 --- !u!4 &400084
@@ -1249,7 +1249,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100086}
   m_LocalRotation: {x: 0, y: 0, z: -.707106352, w: .707107306}
-  m_LocalPosition: {x: -0, y: 0, z: .0507048033}
+  m_LocalPosition: {x: -0, y: 0, z: -.25073871}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400090}
@@ -1303,7 +1303,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 7b080527dac3fb7489446f90580aed05, type: 2}
+  - {fileID: 2100000, guid: 21c839de0ae93cf4d9c23242827e45fe, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -1324,7 +1324,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 2af97fae7955b1b44b7bde039866b5d5, type: 2}
+  - {fileID: 2100000, guid: 21c839de0ae93cf4d9c23242827e45fe, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -1339,7 +1339,7 @@ Renderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100004}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
@@ -1381,14 +1381,14 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
-  m_Mesh: {fileID: 4300004, guid: a51148be508557543af59c3968073c02, type: 3}
+  m_Mesh: {fileID: 4300004, guid: 214e16f371a4f3941adfba4d0017fe1a, type: 3}
 --- !u!33 &3300002
 MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100050}
-  m_Mesh: {fileID: 4300002, guid: a51148be508557543af59c3968073c02, type: 3}
+  m_Mesh: {fileID: 4300002, guid: 214e16f371a4f3941adfba4d0017fe1a, type: 3}
 --- !u!33 &3300004
 MeshFilter:
   m_ObjectHideFlags: 1
@@ -1454,14 +1454,14 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 3
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 5
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -1511,7 +1511,7 @@ Animator:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100092}
   m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: a51148be508557543af59c3968073c02, type: 3}
+  m_Avatar: {fileID: 9000000, guid: 214e16f371a4f3941adfba4d0017fe1a, type: 3}
   m_Controller: {fileID: 9100000, guid: c7b97bf6a172ad9469fc011ccee798b4, type: 2}
   m_CullingMode: 1
   m_ApplyRootMotion: 1
@@ -1541,12 +1541,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lickSound: {fileID: 8300000, guid: 2b3b5b998cf24994baebe5c1df75eb60, type: 3}
-  hey: {fileID: 8300000, guid: 40d065b06bb7e114f9a2d04a4fd01b85, type: 3}
+  hey: {fileID: 8300000, guid: 8634ffd52c3575a4199893c3b5164702, type: 3}
   patrolPoints:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  animator: {fileID: 9500000}
   maxTimeInNoticeRange: 3
   turningSpeed: 80
   seePlayerLayer:
@@ -1627,7 +1628,7 @@ SkinnedMeshRenderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 7b080527dac3fb7489446f90580aed05, type: 2}
+  - {fileID: 2100000, guid: 21c839de0ae93cf4d9c23242827e45fe, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -1639,7 +1640,7 @@ SkinnedMeshRenderer:
   serializedVersion: 2
   m_Quality: 0
   m_UpdateWhenOffscreen: 0
-  m_Mesh: {fileID: 4300000, guid: a51148be508557543af59c3968073c02, type: 3}
+  m_Mesh: {fileID: 4300000, guid: 214e16f371a4f3941adfba4d0017fe1a, type: 3}
   m_Bones:
   - {fileID: 400026}
   - {fileID: 400028}
@@ -1673,7 +1674,7 @@ SkinnedMeshRenderer:
   m_BlendShapeWeights: []
   m_RootBone: {fileID: 400090}
   m_AABB:
-    m_Center: {x: .153748214, y: 2.2649765e-06, z: .281492233}
+    m_Center: {x: .153748214, y: 2.2649765e-06, z: .281492293}
     m_Extent: {x: .67198354, y: 2.11213255, z: .678569973}
   m_DirtyAABB: 0
 --- !u!164 &16400000

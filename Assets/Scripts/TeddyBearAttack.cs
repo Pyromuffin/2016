@@ -17,7 +17,7 @@ public class TeddyBearAttack : MonoBehaviour {
     public float laserTime = .5f;
 
     public LineRenderer line;
-
+    public Animator animator;
 
     bool chimed = false;
 	public float chargeTime = 1.0f;
@@ -91,6 +91,7 @@ public class TeddyBearAttack : MonoBehaviour {
         {
             if (chimed)
             {
+                animator.SetTrigger("attack");
                 audio.PlayOneShot(wob, 1);
                 StartCoroutine(LAZOR());
             }

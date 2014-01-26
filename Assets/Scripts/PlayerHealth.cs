@@ -11,15 +11,17 @@ public class PlayerHealth : MonoBehaviour {
     public AudioClip[] ouchs;
     public bool dead = false;
 	HealthBar healthBar;
-	GameObject deadState;
+	GameObject deadStateGO;
     Vignetting[] vignettes;
+    public Animator animator;
 
 	// Use this for initialization
 	void Start () {
 		currentHealth = maxHealth;
 		healthBar = GameObject.FindObjectOfType<HealthBar> ();
-		deadState = GameObject.Find ("deadState");
-		deadState.SetActive (false);
+		deadStateGO = GameObject.Find ("deadState");
+        FindObjectOfType<GhostBar>().dsGO = deadStateGO;
+		deadStateGO.SetActive (false);
        
         vignettes = FindObjectsOfType<Vignetting>();
 	}
@@ -49,7 +51,7 @@ public class PlayerHealth : MonoBehaviour {
 	public void TongueAttack(){
         if (!dead)
         {
-            //Debug.Log("TongueAttack in player");
+            
             currentHealth--;
             healthBar.DecrementHealth(1);
             StartCoroutine(hitEffect());
@@ -60,7 +62,7 @@ public class PlayerHealth : MonoBehaviour {
 	public void GhostAttack(){
         if (!dead) 
         { 
-            //Debug.Log ("GhostAttack in player");
+            
 		    currentHealth -= 2;
         
             StartCoroutine(hitEffect());
@@ -83,6 +85,9 @@ public class PlayerHealth : MonoBehaviour {
                 v.blurSpread = 20;
                 v.blurDistance = 30;
             }
+
+            animator.SetTrigger("die");
+
             var cops = FindObjectsOfType<CopAI>();
             var ghosts = FindObjectsOfType<GhostAI>();
 
@@ -92,7 +97,8 @@ public class PlayerHealth : MonoBehaviour {
                 g.enabled = false;
 
             FindObjectOfType<OVRPlayerController>().enabled = false;
-			deadState.SetActive(true);
+            deadStateGO.SetActive(true);
+            deadState.ShowDeath();
 			
 			//Lose Game stuff
 		}

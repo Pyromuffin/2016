@@ -7,6 +7,8 @@ public class GhostAI : MonoBehaviour {
     private StepSounds stepSounds;
     private GameObject player;
     public GameObject[] arms;
+    public Animator animator;
+    public NavMeshAgent agent;
 
 	public GameObject[] patrolPoints;
 	private GameObject currentPatrolPoint;
@@ -14,9 +16,9 @@ public class GhostAI : MonoBehaviour {
 	private bool seesPlayer = false;
 	private bool isChasingPlayer = false;
 
-    enum ghostState { patrolling, notice, pursuing, waiting, attacking };
+    public enum ghostState { patrolling, notice, pursuing, waiting, attacking, dead };
 
-    ghostState state = ghostState.patrolling;
+    public ghostState state = ghostState.patrolling;
 
     float detectRadius = 8;
     float noticeToPursueTime = 2;
@@ -65,6 +67,7 @@ public class GhostAI : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+        animator.SetFloat("speed", agent.velocity.magnitude);
 
         switch (state)
         {
@@ -144,6 +147,10 @@ public class GhostAI : MonoBehaviour {
 
                 
                 break;
+            case ghostState.dead:
+                
+
+                break;
             default:
                 break;
         }
@@ -163,7 +170,7 @@ public class GhostAI : MonoBehaviour {
     IEnumerator attack()
     {
         float rotation = 0;
-
+        animator.SetTrigger("attack");
         while (rotation < 360)
         {
             foreach (var arm in arms)

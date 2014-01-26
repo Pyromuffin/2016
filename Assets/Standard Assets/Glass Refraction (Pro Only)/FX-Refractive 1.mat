@@ -6,7 +6,7 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: FX-Refractive
+  m_Name: FX-Refractive 1
   m_Shader: {fileID: 4800000, guid: 963484209d11fd7f110076aa44295342, type: 3}
   m_ShaderKeywords: []
   m_CustomRenderQueue: -1
@@ -24,7 +24,7 @@ Material:
         first:
           name: _BumpMap
         second:
-          m_Texture: {fileID: 2800000, guid: 6afb434a05206a8498be9dcdde17038e, type: 3}
+          m_Texture: {fileID: 2800000, guid: 771a0976a00f81d408b48db512542903, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
     m_Floats:

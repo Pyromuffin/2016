@@ -1,0 +1,1361 @@
+fileFormatVersion: 2
+guid: 3d60f548c623fd946a97ad0b305109c0
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: bear_armL
+    100002: bear_armR
+    100004: bear_head
+    100006: bear_legL
+    100008: bear_legR
+    100010: BearBody
+    100012: BipGirl
+    100014: BipGirl Footsteps
+    100016: BipGirl Head
+    100018: BipGirl HeadNub
+    100020: BipGirl L Calf
+    100022: BipGirl L Clavicle
+    100024: BipGirl L Finger0
+    100026: BipGirl L Finger01
+    100028: BipGirl L Finger02
+    100030: BipGirl L Finger0Nub
+    100032: BipGirl L Finger1
+    100034: BipGirl L Finger11
+    100036: BipGirl L Finger12
+    100038: BipGirl L Finger1Nub
+    100040: BipGirl L Finger2
+    100042: BipGirl L Finger21
+    100044: BipGirl L Finger22
+    100046: BipGirl L Finger2Nub
+    100048: BipGirl L Finger3
+    100050: BipGirl L Finger31
+    100052: BipGirl L Finger32
+    100054: BipGirl L Finger3Nub
+    100056: BipGirl L Finger4
+    100058: BipGirl L Finger41
+    100060: BipGirl L Finger42
+    100062: BipGirl L Finger4Nub
+    100064: BipGirl L Foot
+    100066: BipGirl L Forearm
+    100068: BipGirl L Hand
+    100070: BipGirl L Thigh
+    100072: BipGirl L Toe0
+    100074: BipGirl L Toe0Nub
+    100076: BipGirl L UpperArm
+    100078: BipGirl Neck
+    100080: BipGirl Pelvis
+    100082: BipGirl R Calf
+    100084: BipGirl R Clavicle
+    100086: BipGirl R Finger0
+    100088: BipGirl R Finger01
+    100090: BipGirl R Finger02
+    100092: BipGirl R Finger0Nub
+    100094: BipGirl R Finger1
+    100096: BipGirl R Finger11
+    100098: BipGirl R Finger12
+    100100: BipGirl R Finger1Nub
+    100102: BipGirl R Finger2
+    100104: BipGirl R Finger21
+    100106: BipGirl R Finger22
+    100108: BipGirl R Finger2Nub
+    100110: BipGirl R Finger3
+    100112: BipGirl R Finger31
+    100114: BipGirl R Finger32
+    100116: BipGirl R Finger3Nub
+    100118: BipGirl R Finger4
+    100120: BipGirl R Finger41
+    100122: BipGirl R Finger42
+    100124: BipGirl R Finger4Nub
+    100126: BipGirl R Foot
+    100128: BipGirl R Forearm
+    100130: BipGirl R Hand
+    100132: BipGirl R Thigh
+    100134: BipGirl R Toe0
+    100136: BipGirl R Toe0Nub
+    100138: BipGirl R UpperArm
+    100140: BipGirl Spine
+    100142: BipGirl Spine1
+    100144: BipGirl Spine2
+    100146: //RootNode
+    100148: Girl_mesh
+    100150: GirlArm_mesh
+    400000: bear_armL
+    400002: bear_armR
+    400004: bear_head
+    400006: bear_legL
+    400008: bear_legR
+    400010: BearBody
+    400012: BipGirl
+    400014: BipGirl Footsteps
+    400016: BipGirl Head
+    400018: BipGirl HeadNub
+    400020: BipGirl L Calf
+    400022: BipGirl L Clavicle
+    400024: BipGirl L Finger0
+    400026: BipGirl L Finger01
+    400028: BipGirl L Finger02
+    400030: BipGirl L Finger0Nub
+    400032: BipGirl L Finger1
+    400034: BipGirl L Finger11
+    400036: BipGirl L Finger12
+    400038: BipGirl L Finger1Nub
+    400040: BipGirl L Finger2
+    400042: BipGirl L Finger21
+    400044: BipGirl L Finger22
+    400046: BipGirl L Finger2Nub
+    400048: BipGirl L Finger3
+    400050: BipGirl L Finger31
+    400052: BipGirl L Finger32
+    400054: BipGirl L Finger3Nub
+    400056: BipGirl L Finger4
+    400058: BipGirl L Finger41
+    400060: BipGirl L Finger42
+    400062: BipGirl L Finger4Nub
+    400064: BipGirl L Foot
+    400066: BipGirl L Forearm
+    400068: BipGirl L Hand
+    400070: BipGirl L Thigh
+    400072: BipGirl L Toe0
+    400074: BipGirl L Toe0Nub
+    400076: BipGirl L UpperArm
+    400078: BipGirl Neck
+    400080: BipGirl Pelvis
+    400082: BipGirl R Calf
+    400084: BipGirl R Clavicle
+    400086: BipGirl R Finger0
+    400088: BipGirl R Finger01
+    400090: BipGirl R Finger02
+    400092: BipGirl R Finger0Nub
+    400094: BipGirl R Finger1
+    400096: BipGirl R Finger11
+    400098: BipGirl R Finger12
+    400100: BipGirl R Finger1Nub
+    400102: BipGirl R Finger2
+    400104: BipGirl R Finger21
+    400106: BipGirl R Finger22
+    400108: BipGirl R Finger2Nub
+    400110: BipGirl R Finger3
+    400112: BipGirl R Finger31
+    400114: BipGirl R Finger32
+    400116: BipGirl R Finger3Nub
+    400118: BipGirl R Finger4
+    400120: BipGirl R Finger41
+    400122: BipGirl R Finger42
+    400124: BipGirl R Finger4Nub
+    400126: BipGirl R Foot
+    400128: BipGirl R Forearm
+    400130: BipGirl R Hand
+    400132: BipGirl R Thigh
+    400134: BipGirl R Toe0
+    400136: BipGirl R Toe0Nub
+    400138: BipGirl R UpperArm
+    400140: BipGirl Spine
+    400142: BipGirl Spine1
+    400144: BipGirl Spine2
+    400146: //RootNode
+    400148: Girl_mesh
+    400150: GirlArm_mesh
+    2300000: bear_armL
+    2300002: bear_armR
+    2300004: bear_head
+    2300006: bear_legL
+    2300008: bear_legR
+    2300010: BearBody
+    3300000: bear_armL
+    3300002: bear_armR
+    3300004: bear_head
+    3300006: bear_legL
+    3300008: bear_legR
+    3300010: BearBody
+    4300000: BearBody
+    4300002: bear_armR
+    4300004: bear_legR
+    4300006: bear_legL
+    4300008: bear_armL
+    4300010: bear_head
+    4300012: Girl_mesh
+    4300014: GirlArm_mesh
+    7400000: idle
+    7400002: walk
+    7400004: attack
+    7400006: die
+    9500000: //RootNode
+    13700000: Girl_mesh
+    13700002: GirlArm_mesh
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: idle
+      takeName: Take 001
+      firstFrame: 10
+      lastFrame: 70
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: BipGirl
+        weight: 1
+      - path: BipGirl/BipGirl Footsteps
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl L Thigh
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl L Thigh/BipGirl L Calf
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl L Thigh/BipGirl L Calf/BipGirl
+          L Foot
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl L Thigh/BipGirl L Calf/BipGirl
+          L Foot/BipGirl L Toe0
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl L Thigh/BipGirl L Calf/BipGirl
+          L Foot/BipGirl L Toe0/BipGirl L Toe0Nub
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl R Thigh
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl R Thigh/BipGirl R Calf
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl R Thigh/BipGirl R Calf/BipGirl
+          R Foot
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl R Thigh/BipGirl R Calf/BipGirl
+          R Foot/BipGirl R Toe0
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl R Thigh/BipGirl R Calf/BipGirl
+          R Foot/BipGirl R Toe0/BipGirl R Toe0Nub
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl Head
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl Head/BipGirl HeadNub
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle/BipGirl L UpperArm
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle/BipGirl L UpperArm/BipGirl L Forearm
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle/BipGirl L UpperArm/BipGirl L Forearm/BipGirl L Hand
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle/BipGirl L UpperArm/BipGirl L Forearm/BipGirl L Hand/BipGirl
+          L Finger0
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle/BipGirl L UpperArm/BipGirl L Forearm/BipGirl L Hand/BipGirl
+          L Finger0/BipGirl L Finger01
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle/BipGirl L UpperArm/BipGirl L Forearm/BipGirl L Hand/BipGirl
+          L Finger0/BipGirl L Finger01/BipGirl L Finger02
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle/BipGirl L UpperArm/BipGirl L Forearm/BipGirl L Hand/BipGirl
+          L Finger0/BipGirl L Finger01/BipGirl L Finger02/BipGirl L Finger0Nub
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle/BipGirl L UpperArm/BipGirl L Forearm/BipGirl L Hand/BipGirl
+          L Finger1
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle/BipGirl L UpperArm/BipGirl L Forearm/BipGirl L Hand/BipGirl
+          L Finger1/BipGirl L Finger11
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle/BipGirl L UpperArm/BipGirl L Forearm/BipGirl L Hand/BipGirl
+          L Finger1/BipGirl L Finger11/BipGirl L Finger12
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle/BipGirl L UpperArm/BipGirl L Forearm/BipGirl L Hand/BipGirl
+          L Finger1/BipGirl L Finger11/BipGirl L Finger12/BipGirl L Finger1Nub
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle/BipGirl L UpperArm/BipGirl L Forearm/BipGirl L Hand/BipGirl
+          L Finger2
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle/BipGirl L UpperArm/BipGirl L Forearm/BipGirl L Hand/BipGirl
+          L Finger2/BipGirl L Finger21
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle/BipGirl L UpperArm/BipGirl L Forearm/BipGirl L Hand/BipGirl
+          L Finger2/BipGirl L Finger21/BipGirl L Finger22
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle/BipGirl L UpperArm/BipGirl L Forearm/BipGirl L Hand/BipGirl
+          L Finger2/BipGirl L Finger21/BipGirl L Finger22/BipGirl L Finger2Nub
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle/BipGirl L UpperArm/BipGirl L Forearm/BipGirl L Hand/BipGirl
+          L Finger3
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle/BipGirl L UpperArm/BipGirl L Forearm/BipGirl L Hand/BipGirl
+          L Finger3/BipGirl L Finger31
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle/BipGirl L UpperArm/BipGirl L Forearm/BipGirl L Hand/BipGirl
+          L Finger3/BipGirl L Finger31/BipGirl L Finger32
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle/BipGirl L UpperArm/BipGirl L Forearm/BipGirl L Hand/BipGirl
+          L Finger3/BipGirl L Finger31/BipGirl L Finger32/BipGirl L Finger3Nub
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle/BipGirl L UpperArm/BipGirl L Forearm/BipGirl L Hand/BipGirl
+          L Finger4
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle/BipGirl L UpperArm/BipGirl L Forearm/BipGirl L Hand/BipGirl
+          L Finger4/BipGirl L Finger41
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle/BipGirl L UpperArm/BipGirl L Forearm/BipGirl L Hand/BipGirl
+          L Finger4/BipGirl L Finger41/BipGirl L Finger42
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle/BipGirl L UpperArm/BipGirl L Forearm/BipGirl L Hand/BipGirl
+          L Finger4/BipGirl L Finger41/BipGirl L Finger42/BipGirl L Finger4Nub
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BearBody
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BearBody/bear_armL
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BearBody/bear_armR
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BearBody/bear_head
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BearBody/bear_legL
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BearBody/bear_legR
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BipGirl
+          R Finger0
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BipGirl
+          R Finger0/BipGirl R Finger01
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BipGirl
+          R Finger0/BipGirl R Finger01/BipGirl R Finger02
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BipGirl
+          R Finger0/BipGirl R Finger01/BipGirl R Finger02/BipGirl R Finger0Nub
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BipGirl
+          R Finger1
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BipGirl
+          R Finger1/BipGirl R Finger11
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BipGirl
+          R Finger1/BipGirl R Finger11/BipGirl R Finger12
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BipGirl
+          R Finger1/BipGirl R Finger11/BipGirl R Finger12/BipGirl R Finger1Nub
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BipGirl
+          R Finger2
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BipGirl
+          R Finger2/BipGirl R Finger21
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BipGirl
+          R Finger2/BipGirl R Finger21/BipGirl R Finger22
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BipGirl
+          R Finger2/BipGirl R Finger21/BipGirl R Finger22/BipGirl R Finger2Nub
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BipGirl
+          R Finger3
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BipGirl
+          R Finger3/BipGirl R Finger31
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BipGirl
+          R Finger3/BipGirl R Finger31/BipGirl R Finger32
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BipGirl
+          R Finger3/BipGirl R Finger31/BipGirl R Finger32/BipGirl R Finger3Nub
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BipGirl
+          R Finger4
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BipGirl
+          R Finger4/BipGirl R Finger41
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BipGirl
+          R Finger4/BipGirl R Finger41/BipGirl R Finger42
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BipGirl
+          R Finger4/BipGirl R Finger41/BipGirl R Finger42/BipGirl R Finger4Nub
+        weight: 1
+      - path: Girl_mesh
+        weight: 1
+      - path: GirlArm_mesh
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: walk
+      takeName: Take 001
+      firstFrame: 100
+      lastFrame: 130
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: BipGirl
+        weight: 1
+      - path: BipGirl/BipGirl Footsteps
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl L Thigh
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl L Thigh/BipGirl L Calf
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl L Thigh/BipGirl L Calf/BipGirl
+          L Foot
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl L Thigh/BipGirl L Calf/BipGirl
+          L Foot/BipGirl L Toe0
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl L Thigh/BipGirl L Calf/BipGirl
+          L Foot/BipGirl L Toe0/BipGirl L Toe0Nub
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl R Thigh
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl R Thigh/BipGirl R Calf
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl R Thigh/BipGirl R Calf/BipGirl
+          R Foot
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl R Thigh/BipGirl R Calf/BipGirl
+          R Foot/BipGirl R Toe0
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl R Thigh/BipGirl R Calf/BipGirl
+          R Foot/BipGirl R Toe0/BipGirl R Toe0Nub
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl Head
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl Head/BipGirl HeadNub
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle/BipGirl L UpperArm
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle/BipGirl L UpperArm/BipGirl L Forearm
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle/BipGirl L UpperArm/BipGirl L Forearm/BipGirl L Hand
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle/BipGirl L UpperArm/BipGirl L Forearm/BipGirl L Hand/BipGirl
+          L Finger0
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle/BipGirl L UpperArm/BipGirl L Forearm/BipGirl L Hand/BipGirl
+          L Finger0/BipGirl L Finger01
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle/BipGirl L UpperArm/BipGirl L Forearm/BipGirl L Hand/BipGirl
+          L Finger0/BipGirl L Finger01/BipGirl L Finger02
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle/BipGirl L UpperArm/BipGirl L Forearm/BipGirl L Hand/BipGirl
+          L Finger0/BipGirl L Finger01/BipGirl L Finger02/BipGirl L Finger0Nub
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle/BipGirl L UpperArm/BipGirl L Forearm/BipGirl L Hand/BipGirl
+          L Finger1
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle/BipGirl L UpperArm/BipGirl L Forearm/BipGirl L Hand/BipGirl
+          L Finger1/BipGirl L Finger11
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle/BipGirl L UpperArm/BipGirl L Forearm/BipGirl L Hand/BipGirl
+          L Finger1/BipGirl L Finger11/BipGirl L Finger12
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle/BipGirl L UpperArm/BipGirl L Forearm/BipGirl L Hand/BipGirl
+          L Finger1/BipGirl L Finger11/BipGirl L Finger12/BipGirl L Finger1Nub
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle/BipGirl L UpperArm/BipGirl L Forearm/BipGirl L Hand/BipGirl
+          L Finger2
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle/BipGirl L UpperArm/BipGirl L Forearm/BipGirl L Hand/BipGirl
+          L Finger2/BipGirl L Finger21
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle/BipGirl L UpperArm/BipGirl L Forearm/BipGirl L Hand/BipGirl
+          L Finger2/BipGirl L Finger21/BipGirl L Finger22
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle/BipGirl L UpperArm/BipGirl L Forearm/BipGirl L Hand/BipGirl
+          L Finger2/BipGirl L Finger21/BipGirl L Finger22/BipGirl L Finger2Nub
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle/BipGirl L UpperArm/BipGirl L Forearm/BipGirl L Hand/BipGirl
+          L Finger3
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle/BipGirl L UpperArm/BipGirl L Forearm/BipGirl L Hand/BipGirl
+          L Finger3/BipGirl L Finger31
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle/BipGirl L UpperArm/BipGirl L Forearm/BipGirl L Hand/BipGirl
+          L Finger3/BipGirl L Finger31/BipGirl L Finger32
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle/BipGirl L UpperArm/BipGirl L Forearm/BipGirl L Hand/BipGirl
+          L Finger3/BipGirl L Finger31/BipGirl L Finger32/BipGirl L Finger3Nub
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle/BipGirl L UpperArm/BipGirl L Forearm/BipGirl L Hand/BipGirl
+          L Finger4
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle/BipGirl L UpperArm/BipGirl L Forearm/BipGirl L Hand/BipGirl
+          L Finger4/BipGirl L Finger41
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle/BipGirl L UpperArm/BipGirl L Forearm/BipGirl L Hand/BipGirl
+          L Finger4/BipGirl L Finger41/BipGirl L Finger42
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle/BipGirl L UpperArm/BipGirl L Forearm/BipGirl L Hand/BipGirl
+          L Finger4/BipGirl L Finger41/BipGirl L Finger42/BipGirl L Finger4Nub
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BearBody
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BearBody/bear_armL
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BearBody/bear_armR
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BearBody/bear_head
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BearBody/bear_legL
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BearBody/bear_legR
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BipGirl
+          R Finger0
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BipGirl
+          R Finger0/BipGirl R Finger01
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BipGirl
+          R Finger0/BipGirl R Finger01/BipGirl R Finger02
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BipGirl
+          R Finger0/BipGirl R Finger01/BipGirl R Finger02/BipGirl R Finger0Nub
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BipGirl
+          R Finger1
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BipGirl
+          R Finger1/BipGirl R Finger11
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BipGirl
+          R Finger1/BipGirl R Finger11/BipGirl R Finger12
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BipGirl
+          R Finger1/BipGirl R Finger11/BipGirl R Finger12/BipGirl R Finger1Nub
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BipGirl
+          R Finger2
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BipGirl
+          R Finger2/BipGirl R Finger21
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BipGirl
+          R Finger2/BipGirl R Finger21/BipGirl R Finger22
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BipGirl
+          R Finger2/BipGirl R Finger21/BipGirl R Finger22/BipGirl R Finger2Nub
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BipGirl
+          R Finger3
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BipGirl
+          R Finger3/BipGirl R Finger31
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BipGirl
+          R Finger3/BipGirl R Finger31/BipGirl R Finger32
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BipGirl
+          R Finger3/BipGirl R Finger31/BipGirl R Finger32/BipGirl R Finger3Nub
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BipGirl
+          R Finger4
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BipGirl
+          R Finger4/BipGirl R Finger41
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BipGirl
+          R Finger4/BipGirl R Finger41/BipGirl R Finger42
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BipGirl
+          R Finger4/BipGirl R Finger41/BipGirl R Finger42/BipGirl R Finger4Nub
+        weight: 1
+      - path: Girl_mesh
+        weight: 1
+      - path: GirlArm_mesh
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: attack
+      takeName: Take 001
+      firstFrame: 200
+      lastFrame: 230
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: BipGirl
+        weight: 1
+      - path: BipGirl/BipGirl Footsteps
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl L Thigh
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl L Thigh/BipGirl L Calf
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl L Thigh/BipGirl L Calf/BipGirl
+          L Foot
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl L Thigh/BipGirl L Calf/BipGirl
+          L Foot/BipGirl L Toe0
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl L Thigh/BipGirl L Calf/BipGirl
+          L Foot/BipGirl L Toe0/BipGirl L Toe0Nub
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl R Thigh
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl R Thigh/BipGirl R Calf
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl R Thigh/BipGirl R Calf/BipGirl
+          R Foot
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl R Thigh/BipGirl R Calf/BipGirl
+          R Foot/BipGirl R Toe0
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl R Thigh/BipGirl R Calf/BipGirl
+          R Foot/BipGirl R Toe0/BipGirl R Toe0Nub
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl Head
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl Head/BipGirl HeadNub
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle/BipGirl L UpperArm
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle/BipGirl L UpperArm/BipGirl L Forearm
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle/BipGirl L UpperArm/BipGirl L Forearm/BipGirl L Hand
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle/BipGirl L UpperArm/BipGirl L Forearm/BipGirl L Hand/BipGirl
+          L Finger0
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle/BipGirl L UpperArm/BipGirl L Forearm/BipGirl L Hand/BipGirl
+          L Finger0/BipGirl L Finger01
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle/BipGirl L UpperArm/BipGirl L Forearm/BipGirl L Hand/BipGirl
+          L Finger0/BipGirl L Finger01/BipGirl L Finger02
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle/BipGirl L UpperArm/BipGirl L Forearm/BipGirl L Hand/BipGirl
+          L Finger0/BipGirl L Finger01/BipGirl L Finger02/BipGirl L Finger0Nub
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle/BipGirl L UpperArm/BipGirl L Forearm/BipGirl L Hand/BipGirl
+          L Finger1
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle/BipGirl L UpperArm/BipGirl L Forearm/BipGirl L Hand/BipGirl
+          L Finger1/BipGirl L Finger11
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle/BipGirl L UpperArm/BipGirl L Forearm/BipGirl L Hand/BipGirl
+          L Finger1/BipGirl L Finger11/BipGirl L Finger12
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle/BipGirl L UpperArm/BipGirl L Forearm/BipGirl L Hand/BipGirl
+          L Finger1/BipGirl L Finger11/BipGirl L Finger12/BipGirl L Finger1Nub
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle/BipGirl L UpperArm/BipGirl L Forearm/BipGirl L Hand/BipGirl
+          L Finger2
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle/BipGirl L UpperArm/BipGirl L Forearm/BipGirl L Hand/BipGirl
+          L Finger2/BipGirl L Finger21
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle/BipGirl L UpperArm/BipGirl L Forearm/BipGirl L Hand/BipGirl
+          L Finger2/BipGirl L Finger21/BipGirl L Finger22
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle/BipGirl L UpperArm/BipGirl L Forearm/BipGirl L Hand/BipGirl
+          L Finger2/BipGirl L Finger21/BipGirl L Finger22/BipGirl L Finger2Nub
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle/BipGirl L UpperArm/BipGirl L Forearm/BipGirl L Hand/BipGirl
+          L Finger3
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle/BipGirl L UpperArm/BipGirl L Forearm/BipGirl L Hand/BipGirl
+          L Finger3/BipGirl L Finger31
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle/BipGirl L UpperArm/BipGirl L Forearm/BipGirl L Hand/BipGirl
+          L Finger3/BipGirl L Finger31/BipGirl L Finger32
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle/BipGirl L UpperArm/BipGirl L Forearm/BipGirl L Hand/BipGirl
+          L Finger3/BipGirl L Finger31/BipGirl L Finger32/BipGirl L Finger3Nub
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle/BipGirl L UpperArm/BipGirl L Forearm/BipGirl L Hand/BipGirl
+          L Finger4
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle/BipGirl L UpperArm/BipGirl L Forearm/BipGirl L Hand/BipGirl
+          L Finger4/BipGirl L Finger41
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle/BipGirl L UpperArm/BipGirl L Forearm/BipGirl L Hand/BipGirl
+          L Finger4/BipGirl L Finger41/BipGirl L Finger42
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle/BipGirl L UpperArm/BipGirl L Forearm/BipGirl L Hand/BipGirl
+          L Finger4/BipGirl L Finger41/BipGirl L Finger42/BipGirl L Finger4Nub
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BearBody
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BearBody/bear_armL
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BearBody/bear_armR
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BearBody/bear_head
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BearBody/bear_legL
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BearBody/bear_legR
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BipGirl
+          R Finger0
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BipGirl
+          R Finger0/BipGirl R Finger01
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BipGirl
+          R Finger0/BipGirl R Finger01/BipGirl R Finger02
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BipGirl
+          R Finger0/BipGirl R Finger01/BipGirl R Finger02/BipGirl R Finger0Nub
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BipGirl
+          R Finger1
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BipGirl
+          R Finger1/BipGirl R Finger11
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BipGirl
+          R Finger1/BipGirl R Finger11/BipGirl R Finger12
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BipGirl
+          R Finger1/BipGirl R Finger11/BipGirl R Finger12/BipGirl R Finger1Nub
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BipGirl
+          R Finger2
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BipGirl
+          R Finger2/BipGirl R Finger21
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BipGirl
+          R Finger2/BipGirl R Finger21/BipGirl R Finger22
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BipGirl
+          R Finger2/BipGirl R Finger21/BipGirl R Finger22/BipGirl R Finger2Nub
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BipGirl
+          R Finger3
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BipGirl
+          R Finger3/BipGirl R Finger31
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BipGirl
+          R Finger3/BipGirl R Finger31/BipGirl R Finger32
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BipGirl
+          R Finger3/BipGirl R Finger31/BipGirl R Finger32/BipGirl R Finger3Nub
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BipGirl
+          R Finger4
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BipGirl
+          R Finger4/BipGirl R Finger41
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BipGirl
+          R Finger4/BipGirl R Finger41/BipGirl R Finger42
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BipGirl
+          R Finger4/BipGirl R Finger41/BipGirl R Finger42/BipGirl R Finger4Nub
+        weight: 1
+      - path: Girl_mesh
+        weight: 1
+      - path: GirlArm_mesh
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: die
+      takeName: Take 001
+      firstFrame: 300
+      lastFrame: 360
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: BipGirl
+        weight: 1
+      - path: BipGirl/BipGirl Footsteps
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl L Thigh
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl L Thigh/BipGirl L Calf
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl L Thigh/BipGirl L Calf/BipGirl
+          L Foot
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl L Thigh/BipGirl L Calf/BipGirl
+          L Foot/BipGirl L Toe0
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl L Thigh/BipGirl L Calf/BipGirl
+          L Foot/BipGirl L Toe0/BipGirl L Toe0Nub
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl R Thigh
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl R Thigh/BipGirl R Calf
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl R Thigh/BipGirl R Calf/BipGirl
+          R Foot
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl R Thigh/BipGirl R Calf/BipGirl
+          R Foot/BipGirl R Toe0
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl R Thigh/BipGirl R Calf/BipGirl
+          R Foot/BipGirl R Toe0/BipGirl R Toe0Nub
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl Head
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl Head/BipGirl HeadNub
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle/BipGirl L UpperArm
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle/BipGirl L UpperArm/BipGirl L Forearm
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle/BipGirl L UpperArm/BipGirl L Forearm/BipGirl L Hand
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle/BipGirl L UpperArm/BipGirl L Forearm/BipGirl L Hand/BipGirl
+          L Finger0
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle/BipGirl L UpperArm/BipGirl L Forearm/BipGirl L Hand/BipGirl
+          L Finger0/BipGirl L Finger01
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle/BipGirl L UpperArm/BipGirl L Forearm/BipGirl L Hand/BipGirl
+          L Finger0/BipGirl L Finger01/BipGirl L Finger02
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle/BipGirl L UpperArm/BipGirl L Forearm/BipGirl L Hand/BipGirl
+          L Finger0/BipGirl L Finger01/BipGirl L Finger02/BipGirl L Finger0Nub
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle/BipGirl L UpperArm/BipGirl L Forearm/BipGirl L Hand/BipGirl
+          L Finger1
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle/BipGirl L UpperArm/BipGirl L Forearm/BipGirl L Hand/BipGirl
+          L Finger1/BipGirl L Finger11
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle/BipGirl L UpperArm/BipGirl L Forearm/BipGirl L Hand/BipGirl
+          L Finger1/BipGirl L Finger11/BipGirl L Finger12
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle/BipGirl L UpperArm/BipGirl L Forearm/BipGirl L Hand/BipGirl
+          L Finger1/BipGirl L Finger11/BipGirl L Finger12/BipGirl L Finger1Nub
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle/BipGirl L UpperArm/BipGirl L Forearm/BipGirl L Hand/BipGirl
+          L Finger2
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle/BipGirl L UpperArm/BipGirl L Forearm/BipGirl L Hand/BipGirl
+          L Finger2/BipGirl L Finger21
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle/BipGirl L UpperArm/BipGirl L Forearm/BipGirl L Hand/BipGirl
+          L Finger2/BipGirl L Finger21/BipGirl L Finger22
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle/BipGirl L UpperArm/BipGirl L Forearm/BipGirl L Hand/BipGirl
+          L Finger2/BipGirl L Finger21/BipGirl L Finger22/BipGirl L Finger2Nub
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle/BipGirl L UpperArm/BipGirl L Forearm/BipGirl L Hand/BipGirl
+          L Finger3
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle/BipGirl L UpperArm/BipGirl L Forearm/BipGirl L Hand/BipGirl
+          L Finger3/BipGirl L Finger31
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle/BipGirl L UpperArm/BipGirl L Forearm/BipGirl L Hand/BipGirl
+          L Finger3/BipGirl L Finger31/BipGirl L Finger32
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle/BipGirl L UpperArm/BipGirl L Forearm/BipGirl L Hand/BipGirl
+          L Finger3/BipGirl L Finger31/BipGirl L Finger32/BipGirl L Finger3Nub
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle/BipGirl L UpperArm/BipGirl L Forearm/BipGirl L Hand/BipGirl
+          L Finger4
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle/BipGirl L UpperArm/BipGirl L Forearm/BipGirl L Hand/BipGirl
+          L Finger4/BipGirl L Finger41
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle/BipGirl L UpperArm/BipGirl L Forearm/BipGirl L Hand/BipGirl
+          L Finger4/BipGirl L Finger41/BipGirl L Finger42
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl L Clavicle/BipGirl L UpperArm/BipGirl L Forearm/BipGirl L Hand/BipGirl
+          L Finger4/BipGirl L Finger41/BipGirl L Finger42/BipGirl L Finger4Nub
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BearBody
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BearBody/bear_armL
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BearBody/bear_armR
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BearBody/bear_head
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BearBody/bear_legL
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BearBody/bear_legR
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BipGirl
+          R Finger0
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BipGirl
+          R Finger0/BipGirl R Finger01
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BipGirl
+          R Finger0/BipGirl R Finger01/BipGirl R Finger02
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BipGirl
+          R Finger0/BipGirl R Finger01/BipGirl R Finger02/BipGirl R Finger0Nub
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BipGirl
+          R Finger1
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BipGirl
+          R Finger1/BipGirl R Finger11
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BipGirl
+          R Finger1/BipGirl R Finger11/BipGirl R Finger12
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BipGirl
+          R Finger1/BipGirl R Finger11/BipGirl R Finger12/BipGirl R Finger1Nub
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BipGirl
+          R Finger2
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BipGirl
+          R Finger2/BipGirl R Finger21
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BipGirl
+          R Finger2/BipGirl R Finger21/BipGirl R Finger22
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BipGirl
+          R Finger2/BipGirl R Finger21/BipGirl R Finger22/BipGirl R Finger2Nub
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BipGirl
+          R Finger3
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BipGirl
+          R Finger3/BipGirl R Finger31
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BipGirl
+          R Finger3/BipGirl R Finger31/BipGirl R Finger32
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BipGirl
+          R Finger3/BipGirl R Finger31/BipGirl R Finger32/BipGirl R Finger3Nub
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BipGirl
+          R Finger4
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BipGirl
+          R Finger4/BipGirl R Finger41
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BipGirl
+          R Finger4/BipGirl R Finger41/BipGirl R Finger42
+        weight: 1
+      - path: BipGirl/BipGirl Pelvis/BipGirl Spine/BipGirl Spine1/BipGirl Spine2/BipGirl
+          Neck/BipGirl R Clavicle/BipGirl R UpperArm/BipGirl R Forearm/BipGirl R Hand/BipGirl
+          R Finger4/BipGirl R Finger41/BipGirl R Finger42/BipGirl R Finger4Nub
+        weight: 1
+      - path: Girl_mesh
+        weight: 1
+      - path: GirlArm_mesh
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 

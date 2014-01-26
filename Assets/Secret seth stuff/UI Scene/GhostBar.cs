@@ -4,10 +4,10 @@ using System.Collections;
 //Moves the progress bar based on how many ghosts we have killed
 public class GhostBar : MonoBehaviour {
 	
-	public float numGhostsKilled = 0f;
+	int numGhostsKilled = 0;
 	public int numGhosts;
     RemorseText remorse;
-
+    public GameObject dsGO;
 	//UI
 	tk2dUIProgressBar bar;
 	float currentValue;
@@ -15,6 +15,7 @@ public class GhostBar : MonoBehaviour {
 	int vBar = 2;
 
 	void Start () {
+      
         remorse = FindObjectOfType<RemorseText>();
 		numGhosts = GameObject.FindObjectsOfType<GhostAI> ().Length;
 		bar = GetComponent<tk2dUIProgressBar> ();
@@ -33,10 +34,12 @@ public class GhostBar : MonoBehaviour {
 
 	//Increment bar when we have killed a ghost!
 	public void KillGhost(){
+
 		numGhostsKilled++;
         remorse.feelRemorse();
-		if (numGhostsKilled > numGhosts){
-			numGhostsKilled = numGhosts;
+		if (numGhostsKilled >= numGhosts){
+            dsGO.SetActive(true);
+            FindObjectOfType<OVRCameraController>().enabled = false;
 			deadState.ShowVictory();
 		}
 		currentValue = numGhostsKilled / numGhosts;

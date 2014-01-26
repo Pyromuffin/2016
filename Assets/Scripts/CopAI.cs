@@ -19,7 +19,7 @@ public class CopAI : MonoBehaviour {
 	private int currentPatrolPoint;
 
 	private AIState currentState;
-
+    public Animator animator;
 	private Vector3 lastPatrollingPosition;
 
 	private float timeSinceLastSawPlayer = 0.0f;
@@ -39,10 +39,13 @@ public class CopAI : MonoBehaviour {
 	public float patrolReturnTimeout = 2.0f; //After going into return to patrol,
 	public float attackRange = 2.0f;
 
+    private NavMeshAgent agent;
+
     private TongueController tongue;
 
 	// Use this for initialization
 	void Start () {
+        agent = GetComponent<NavMeshAgent>();
 		pathManager = GetComponent<PathToGoal>();
 		player = GameObject.FindGameObjectWithTag("Player");
 		currentPatrolPoint = Random.Range(0,patrolPoints.Length);
@@ -52,7 +55,8 @@ public class CopAI : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+        animator.SetFloat("speed", agent.velocity.magnitude);
+
 		bool canSeePlayer = CanSeePlayer();
 
 		float playerDist = (transform.position - player.transform.position).magnitude;
@@ -102,6 +106,7 @@ public class CopAI : MonoBehaviour {
 				if(playerDist < chasePlayerDistance){
                   ;
                     audio.volume = 1;
+                    animator.SetTrigger("shout");
                     audio.PlayOneShot(hey, 1);
                     
 					currentState = AIState.ChasingPlayer;
@@ -137,6 +142,7 @@ public class CopAI : MonoBehaviour {
 			else{
                 if(!tongue.isAttacking)
                 {
+                    animator.SetTrigger("attack");
                     audio.PlayOneShot(lickSound);
                 }
                 tongue.StartAttack();
