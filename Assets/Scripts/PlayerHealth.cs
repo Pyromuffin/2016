@@ -7,22 +7,14 @@ public class PlayerHealth : MonoBehaviour {
 	public int currentHealth = 10;
 
 	HealthBar healthBar;
-	GameObject deadState;
+	GameObject deadStateObj;
 
 	// Use this for initialization
 	void Start () {
 		currentHealth = maxHealth;
 		healthBar = GameObject.FindObjectOfType<HealthBar> ();
-		deadState = GameObject.Find ("deadState");
-		deadState.SetActive (false);
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		if (Input.GetMouseButtonDown(0)){
-			TongueAttack();
-		}
-	
+		deadStateObj = GameObject.Find ("deadState");
+		deadStateObj.SetActive (false);
 	}
 
 	public void TongueAttack(){
@@ -43,10 +35,8 @@ public class PlayerHealth : MonoBehaviour {
 	public void CheckDeath(){
 		if(currentHealth <= 0){
 			//show dead state
-			Debug.Log ("DEAD");
-			deadState.SetActive(true);
-			
-			//Lose Game stuff
+			deadState.ShowDeath();
+			deadStateObj.SetActive(true);
 		}
 	}
 }

@@ -10,13 +10,13 @@ public class GhostBar : MonoBehaviour {
 	//UI
 	tk2dUIProgressBar bar;
 	float currentValue;
+
 	int vBar = 2;
 
 	void Start () {
 		numGhosts = GameObject.FindObjectsOfType<GhostAI> ().Length;
 		bar = GetComponent<tk2dUIProgressBar> ();
 		Reset ();
-		//currentValue = numGhostsKilled / numGhosts;
 	}
 
 	public void Reset(){
@@ -34,7 +34,7 @@ public class GhostBar : MonoBehaviour {
 		numGhostsKilled++;
 		if (numGhostsKilled > numGhosts){
 			numGhostsKilled = numGhosts;
-			Debug.Log("THE GAME SHOULD BE OVER!!");
+			deadState.ShowVictory();
 		}
 		currentValue = numGhostsKilled / numGhosts;
 
