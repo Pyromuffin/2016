@@ -42,7 +42,7 @@ half4 frag( v2f i ) : COLOR
 }
 ENDCG
 
-Category {
+Category { 
 
 	// We must be transparent, so other objects are drawn before this one.
 	Tags { "Queue"="Transparent+100" "RenderType"="Opaque" }
