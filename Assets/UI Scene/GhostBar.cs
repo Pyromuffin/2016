@@ -5,7 +5,7 @@ using System.Collections;
 public class GhostBar : MonoBehaviour {
 	
 	public float numGhostsKilled = 0f;
-	public int numGhosts = 5;
+	public int numGhosts;
 
 	//UI
 	tk2dUIProgressBar bar;
@@ -13,6 +13,7 @@ public class GhostBar : MonoBehaviour {
 	int vBar = 2;
 
 	void Start () {
+		numGhosts = GameObject.FindObjectsOfType<GhostAI> ().Length;
 		bar = GetComponent<tk2dUIProgressBar> ();
 		Reset ();
 		//currentValue = numGhostsKilled / numGhosts;

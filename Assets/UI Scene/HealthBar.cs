@@ -7,11 +7,9 @@ public class HealthBar : MonoBehaviour {
 
 	//Total health
 	//There are 5 health hearts, but there are half hearts... so 10 HP
-	public int HP = 10;
 
 	//The hearts
 	List<tk2dSprite> healthHearts;
-	GameObject deadState;
 
 	// Use this for initialization
 	void Start () {
@@ -26,30 +24,17 @@ public class HealthBar : MonoBehaviour {
 		//Sort list by x value
 		healthHearts = healthHearts.OrderBy (u => u.transform.position.x).ToList ();
 		healthHearts.Reverse ();
-
-		deadState = GameObject.Find ("deadState");
-		deadState.SetActive (false);
 	}
 
 	//Resets health
 	public void SetFullHealth(){
-		HP = 10;
 		foreach(tk2dSprite heart in healthHearts){
 			heart.SetSprite("heart_full");
 		}
 	}
 
-	public bool IsDead(){
-		return HP <= 0;
-	}
-
 	//Remove some HP
 	public void DecrementHealth(int delta){
-
-		//Do not continue to take damage if already dead
-		if(IsDead()){
-			return;
-		}
 
 		//How much hp to remove
 		int deltaHP = Mathf.Abs (delta);
@@ -73,12 +58,6 @@ public class HealthBar : MonoBehaviour {
 				}
 			}
 			deltaHP--;
-		}
-
-		HP -= delta;
-		if(IsDead()){
-			//show dead state
-			deadState.SetActive(true);
 		}
 	}
 }

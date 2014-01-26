@@ -20235,7 +20235,7 @@ Camera:
   m_GameObject: {fileID: 372267405}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
+  m_ClearFlags: 4
   m_BackGroundColor: {r: .192156866, g: .301960796, b: .474509805, a: .0196078438}
   m_NormalizedViewPortRect:
     serializedVersion: 2
@@ -41654,7 +41654,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91ce61b67dc020e4a86af570521395b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HP: 10
 --- !u!4 &1045436246
 Transform:
   m_ObjectHideFlags: 0
@@ -53847,6 +53846,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 10
+  currentHealth: 10
 --- !u!1001 &1376773247
 Prefab:
   m_ObjectHideFlags: 0
@@ -72984,6 +72984,10 @@ Prefab:
     - target: {fileID: 11400002, guid: f737c09e84e702c4da4d9f6949183e13, type: 2}
       propertyPath: cameraSettings.orthographicPixelsPerMeter
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2000000, guid: f737c09e84e702c4da4d9f6949183e13, type: 2}
+      propertyPath: m_ClearFlags
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f737c09e84e702c4da4d9f6949183e13, type: 2}
