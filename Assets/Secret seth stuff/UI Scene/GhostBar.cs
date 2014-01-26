@@ -6,17 +6,19 @@ public class GhostBar : MonoBehaviour {
 	
 	public float numGhostsKilled = 0f;
 	public int numGhosts;
+    RemorseText remorse;
 
 	//UI
 	tk2dUIProgressBar bar;
 	float currentValue;
+
 	int vBar = 2;
 
 	void Start () {
+        remorse = FindObjectOfType<RemorseText>();
 		numGhosts = GameObject.FindObjectsOfType<GhostAI> ().Length;
 		bar = GetComponent<tk2dUIProgressBar> ();
 		Reset ();
-		//currentValue = numGhostsKilled / numGhosts;
 	}
 
 	public void Reset(){
@@ -32,9 +34,10 @@ public class GhostBar : MonoBehaviour {
 	//Increment bar when we have killed a ghost!
 	public void KillGhost(){
 		numGhostsKilled++;
+        remorse.feelRemorse();
 		if (numGhostsKilled > numGhosts){
 			numGhostsKilled = numGhosts;
-			Debug.Log("THE GAME SHOULD BE OVER!!");
+			deadState.ShowVictory();
 		}
 		currentValue = numGhostsKilled / numGhosts;
 
