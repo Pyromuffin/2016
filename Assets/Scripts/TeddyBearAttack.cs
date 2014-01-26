@@ -14,9 +14,12 @@ public class TeddyBearAttack : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(Input.GetButtonDown(buttonName) && !animation.isPlaying){
-			foreach(Collider col in Physics.OverlapSphere(transform.position, teddyRadius, LayerMask.NameToLayer("Ghost"))){
-				col.gameObject.SendMessage("TeddyAttack");
+		if(Input.GetButtonDown(buttonName)){
+			foreach(Collider col in Physics.OverlapSphere(transform.position, teddyRadius)){
+				if(col.gameObject.layer == LayerMask.NameToLayer("Ghost")){
+					col.gameObject.SendMessage("TeddyAttack",SendMessageOptions.DontRequireReceiver);
+					Debug.Log("Teddy Attack");
+				}
 			}
 		}
 	

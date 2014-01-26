@@ -19,21 +19,15 @@ public class PlayerHealth : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetMouseButtonDown(0)){
-			TongueAttack();
-		}
-	
 	}
 
 	public void TongueAttack(){
-		Debug.Log ("TongueAttack in player");
 		currentHealth--;
 		healthBar.DecrementHealth (1);
 		CheckDeath ();
 	}
 
 	public void GhostAttack(){
-		Debug.Log ("GhostAttack in player");
 		currentHealth -= 2;
 		healthBar.DecrementHealth (2);
 		CheckDeath ();

@@ -44,7 +44,7 @@ public class CopAI : MonoBehaviour {
 		player = GameObject.FindGameObjectWithTag("Player");
 		currentPatrolPoint = Random.Range(0,patrolPoints.Length);
 
-		seePlayerFOVCosine = Mathf.Cos(seePlayerFOVAngle);
+		seePlayerFOVCosine = Mathf.Cos(Mathf.Deg2Rad*seePlayerFOVAngle);
 	}
 	
 	// Update is called once per frame
