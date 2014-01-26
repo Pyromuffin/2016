@@ -21,7 +21,7 @@ public class TeddyBearAttack : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		teddy.renderer.material.color = Color.Lerp(Color.blue, Color.red, Mathf.Clamp01(timeButtonHeldDown/chargeTime));
+		teddy.GetComponent<TeddyCharging>().chargeLevel = Mathf.Clamp01(timeButtonHeldDown/chargeTime);
 
 		if(timeButtonHeldDown >= chargeTime && Input.GetButtonUp(buttonName)){
 			AttackWithBear();

@@ -62884,6 +62884,7 @@ GameObject:
   - 4: {fileID: 1651822230}
   - 33: {fileID: 1651822232}
   - 23: {fileID: 1651822231}
+  - 114: {fileID: 1651822233}
   m_Layer: 0
   m_Name: TeddyBear
   m_TagString: Untagged
@@ -62932,6 +62933,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 152383775}
   m_GameObject: {fileID: 1651822229}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1651822233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1651822229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aaab26ae4eae92e46a188e790018e8f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chargeLevel: 0
 --- !u!1 &1655454022
 GameObject:
   m_ObjectHideFlags: 0
