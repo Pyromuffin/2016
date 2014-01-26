@@ -169,7 +169,6 @@ public class GhostAI : MonoBehaviour {
             foreach (var arm in arms)
             {
                 rotation += Time.deltaTime * 360;
-                arm.transform.localEulerAngles = new Vector3(rotation + 50, 0, 0);
             }
             yield return null;
         }

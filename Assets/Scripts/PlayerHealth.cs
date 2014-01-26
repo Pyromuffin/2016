@@ -13,8 +13,14 @@ public class PlayerHealth : MonoBehaviour {
 	void Start () {
 		currentHealth = maxHealth;
 		healthBar = GameObject.FindObjectOfType<HealthBar> ();
-		deadStateObj = GameObject.Find ("deadState");
-		deadStateObj.SetActive (false);
+		deadState = GameObject.Find ("deadState");
+		deadState.SetActive (false);
+	}
+	
+	// Update is called once per frame
+	void Update () {
+		
+	
 	}
 
 	public void TongueAttack(){
