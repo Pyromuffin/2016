@@ -9667,6 +9667,54 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1001 &152383775
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: 261e12ed07bba8648bdcf1de5e3113e9, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 3.39635277
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 261e12ed07bba8648bdcf1de5e3113e9, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 3.28777228e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 261e12ed07bba8648bdcf1de5e3113e9, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -85.6115417
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 261e12ed07bba8648bdcf1de5e3113e9, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 261e12ed07bba8648bdcf1de5e3113e9, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 261e12ed07bba8648bdcf1de5e3113e9, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 261e12ed07bba8648bdcf1de5e3113e9, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100190, guid: 261e12ed07bba8648bdcf1de5e3113e9, type: 2}
+      propertyPath: m_Name
+      value: TeddyBear
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 261e12ed07bba8648bdcf1de5e3113e9, type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a98bdb905cefe744994e5b5f866c4488, type: 2}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 261e12ed07bba8648bdcf1de5e3113e9, type: 2}
+  m_RootGameObject: {fileID: 2030791483}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1001 &155757696
 Prefab:
   m_ObjectHideFlags: 0
@@ -25024,7 +25072,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonName: Fire1
-  teddyRadius: 5
+  teddyRange: 5
+  teddyName: TeddyBear
+  teddy: {fileID: 0}
+  chargeTime: 1
 --- !u!1 &550566842
 GameObject:
   m_ObjectHideFlags: 0
@@ -62953,8 +63004,9 @@ GameObject:
   - 4: {fileID: 1651822230}
   - 33: {fileID: 1651822232}
   - 23: {fileID: 1651822231}
+  - 114: {fileID: 1651822233}
   m_Layer: 0
-  m_Name: TedyBear
+  m_Name: TeddyBear
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -62984,7 +63036,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a98bdb905cefe744994e5b5f866c4488, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -63001,6 +63053,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 1857450225}
   m_GameObject: {fileID: 1651822229}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1651822233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1651822229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aaab26ae4eae92e46a188e790018e8f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chargeLevel: 0
 --- !u!1 &1655454022
 GameObject:
   m_ObjectHideFlags: 0
