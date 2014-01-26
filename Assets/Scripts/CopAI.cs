@@ -17,7 +17,7 @@ public class CopAI : MonoBehaviour {
 
 	public GameObject[] patrolPoints;
 	private int currentPatrolPoint;
-	
+
 	private AIState currentState;
 
 	private Vector3 lastPatrollingPosition;
@@ -66,6 +66,7 @@ public class CopAI : MonoBehaviour {
 				timeSeeingPlayer += Time.deltaTime;
 
 				if(playerDist < noticePlayerDistance){
+
 					lastPatrollingPosition = transform.position;
 					currentState = AIState.NoticePlayer;
 				}
