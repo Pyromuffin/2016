@@ -32,14 +32,14 @@ public class StepSounds : MonoBehaviour {
                 {
                     //there is something between 
                     lowPass.enabled = true;
-                    audio.volume = .5f;
+                    audio.volume = .15f;
                     reverb.enabled = true;
                 }
                 else
                 {
                     lowPass.enabled = false;
                     reverb.enabled = false;
-                    audio.volume = 1;
+                    audio.volume = .75f;
                 }
             }
 
