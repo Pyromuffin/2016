@@ -3,6 +3,7 @@ using System.Collections;
 
 public class BtnNewGame : MonoBehaviour {
 
+    public AudioClip intro;
 	tk2dUIItem ui;
 	
 	// Use this for initialization
@@ -12,6 +13,7 @@ public class BtnNewGame : MonoBehaviour {
 	}
 
 	void NewGame(){
+        audio.PlayOneShot(intro);
 		Application.LoadLevel ("OK SAVE THE SCENE");
 	}
 }
