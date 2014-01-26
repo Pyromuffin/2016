@@ -9582,6 +9582,14 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100190, guid: 261e12ed07bba8648bdcf1de5e3113e9, type: 2}
+      propertyPath: m_Name
+      value: TeddyBear
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 261e12ed07bba8648bdcf1de5e3113e9, type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a98bdb905cefe744994e5b5f866c4488, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 261e12ed07bba8648bdcf1de5e3113e9, type: 2}
   m_RootGameObject: {fileID: 2030791483}
@@ -24944,7 +24952,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonName: Fire1
-  teddyRadius: 5
+  teddyRange: 5
+  teddyName: TeddyBear
+  teddy: {fileID: 0}
+  chargeTime: 1
 --- !u!1 &550566842
 GameObject:
   m_ObjectHideFlags: 0
@@ -62874,7 +62885,7 @@ GameObject:
   - 33: {fileID: 1651822232}
   - 23: {fileID: 1651822231}
   m_Layer: 0
-  m_Name: TedyBear
+  m_Name: TeddyBear
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -62904,7 +62915,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a98bdb905cefe744994e5b5f866c4488, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
