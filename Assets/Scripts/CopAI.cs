@@ -13,7 +13,8 @@ public class CopAI : MonoBehaviour {
 	private PathToGoal pathManager;
 	private StepSounds stepSounds;
 	private GameObject player;
-	
+    public AudioClip lickSound;
+
 	public GameObject[] patrolPoints;
 	private int currentPatrolPoint;
 	
@@ -37,13 +38,15 @@ public class CopAI : MonoBehaviour {
 	public float chasePlayerDistance = 10.0f;
 	public float patrolReturnTimeout = 2.0f; //After going into return to patrol,
 	public float attackRange = 2.0f;
-	
+
+    private TongueController tongue;
+
 	// Use this for initialization
 	void Start () {
 		pathManager = GetComponent<PathToGoal>();
 		player = GameObject.FindGameObjectWithTag("Player");
 		currentPatrolPoint = Random.Range(0,patrolPoints.Length);
-
+        tongue = GetComponentInChildren<TongueController>();
 		seePlayerFOVCosine = Mathf.Cos(seePlayerFOVAngle);
 	}
 	
@@ -123,8 +126,11 @@ public class CopAI : MonoBehaviour {
 				currentState = AIState.ChasingPlayer;
 			}
 			else{
-				GameObject tongueParent = transform.FindChild("TongueParent").gameObject;
-				tongueParent.GetComponent<TongueController>().StartAttack();
+                if(!tongue.isAttacking)
+                {
+                    audio.PlayOneShot(lickSound);
+                }
+                tongue.StartAttack();
 			}
 
 			break;

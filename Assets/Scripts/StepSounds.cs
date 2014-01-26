@@ -20,19 +20,17 @@ public class StepSounds : MonoBehaviour {
     }
 	
 	// Update is called once per frame
-	void Update () {
+	void Update () 
+    {
 
         if ((previousStepPosition - transform.position).magnitude >= stepDistance)
         {
            
-
-            audio.clip = stepSounds[Random.Range(0, stepSounds.Length)];
-            
             if (Physics.Linecast(player.transform.position, transform.position, 1 << LayerMask.NameToLayer("Walls") ) )
             {
                 //there is something between 
                 lowPass.enabled = true;
-                audio.volume = .25f;
+                audio.volume = .5f;
                 reverb.enabled = true;
             }
             else
@@ -41,7 +39,7 @@ public class StepSounds : MonoBehaviour {
                 reverb.enabled = false;
                 audio.volume = 1;
             }
-            audio.Play();
+            audio.PlayOneShot(stepSounds[Random.Range(0, stepSounds.Length)]);
             previousStepPosition = transform.position;
 
         }

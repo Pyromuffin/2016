@@ -8,6 +8,7 @@ public class PlayerHealth : MonoBehaviour {
     public AnimationCurve effectCurve;
     public float effectTime = 1f;
     public float blurStrength, vignetteStrength;
+    public AudioClip[] ouchs;
 
 	HealthBar healthBar;
 	GameObject deadState;
@@ -32,7 +33,7 @@ public class PlayerHealth : MonoBehaviour {
     IEnumerator hitEffect()
     {
         float timer = 0;
-
+        audio.PlayOneShot(ouchs[Random.Range(0, ouchs.Length)]);
         while (timer < 1)
         {
             foreach (var v in vignettes)

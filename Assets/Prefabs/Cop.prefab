@@ -735,7 +735,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -31.9936447, y: 0, z: -47.2520714}
+  m_LocalPosition: {x: -16.9711761, y: 0, z: -92.2429352}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400092}
@@ -783,8 +783,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100008}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: -4.37113883e-08}
-  m_LocalPosition: {x: 0, y: 1, z: .300000012}
-  m_LocalScale: {x: 4, y: 4, z: 4}
+  m_LocalPosition: {x: 0, y: 1, z: -.020866394}
+  m_LocalScale: {x: 2, y: 1, z: 4}
   m_Children: []
   m_Father: {fileID: 400000}
 --- !u!4 &400010
@@ -1540,9 +1540,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 453b2870ef239db4aaf54a7434328115, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lickSound: {fileID: 8300000, guid: 2b3b5b998cf24994baebe5c1df75eb60, type: 3}
   patrolPoints:
-  - {fileID: 0}
-  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -1570,12 +1569,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 964d9bbac61006e4e9741c9506bde404, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stepDistance: 1
+  stepDistance: 2
   stepSounds:
-  - {fileID: 8300000, guid: 2b80bfc33311e53488bf0d06d20b6dc2, type: 3}
-  - {fileID: 8300000, guid: 5dd14c6bdb489024887af3debb4d86e6, type: 3}
-  - {fileID: 8300000, guid: 0ee4d07380e030845b0298bd3cc5d810, type: 3}
-  - {fileID: 8300000, guid: ed7c71efa60ecdf4a90bc993c9a350de, type: 3}
+  - {fileID: 8300000, guid: 1bd257d29f65fe6409971d5532a02dc0, type: 3}
+  - {fileID: 8300000, guid: 647891deb53129c458736ccdae5b07c1, type: 3}
+  - {fileID: 8300000, guid: 7d3179b2da644704ab4c0a76f946dc40, type: 3}
+  - {fileID: 8300000, guid: 886e50f3248fd69429a08e0e4b2881fe, type: 3}
+  - {fileID: 8300000, guid: 8b285628b85193b41a0efe3924ff2e38, type: 3}
+  - {fileID: 8300000, guid: aca016dade9770d49b77fb8ae04dae5b, type: 3}
+  - {fileID: 8300000, guid: acca191ccbc1b2242949032c0105c2d0, type: 3}
+  - {fileID: 8300000, guid: b37e307295fe43845bf72ddf84a9ec83, type: 3}
+  - {fileID: 8300000, guid: b3fc26c7b48bf234bb2fa64f16ca2c0b, type: 3}
+  - {fileID: 8300000, guid: bb676f061e733ec43b004111e628ce13, type: 3}
+  - {fileID: 8300000, guid: c5bb0f3d5db632f4fbdff21dea9390c3, type: 3}
+  - {fileID: 8300000, guid: f27eedb65a7a54b429ce87f9aee5fd9e, type: 3}
 --- !u!114 &11400006
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1600,6 +1607,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   finalScale: 20
   duration: .400000006
+  isAttacking: 0
 --- !u!135 &13500000
 SphereCollider:
   m_ObjectHideFlags: 1

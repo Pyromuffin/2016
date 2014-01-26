@@ -6,7 +6,7 @@ public class TongueController : MonoBehaviour {
 	public float finalScale = 5.0f;
 	public float duration = 1.0f;
 
-	private bool isAttacking = false;
+	public bool isAttacking = false;
 
 	// Use this for initialization
 	void Start () {
