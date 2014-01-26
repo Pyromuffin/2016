@@ -49,7 +49,7 @@ public class PlayerHealth : MonoBehaviour {
 	public void TongueAttack(){
         if (!dead)
         {
-            Debug.Log("TongueAttack in player");
+            //Debug.Log("TongueAttack in player");
             currentHealth--;
             healthBar.DecrementHealth(1);
             StartCoroutine(hitEffect());
@@ -60,7 +60,7 @@ public class PlayerHealth : MonoBehaviour {
 	public void GhostAttack(){
         if (!dead) 
         { 
-            Debug.Log ("GhostAttack in player");
+            //Debug.Log ("GhostAttack in player");
 		    currentHealth -= 2;
         
             StartCoroutine(hitEffect());

@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: 7b0001d7dd0103848960b621a863f8a7
+ShaderImporter:
+  defaultTextures:
+  - _MainTex: {instanceID: 0}
+  - _ReflectanceMap: {instanceID: 0}
+  - _AoMap: {instanceID: 0}
+  - _BumpMap: {instanceID: 0}
+  - _Rsrm: {fileID: 2800000, guid: f8c83f9de46074e4d9b5a9996d9e5e5d, type: 3}
+  - _EnvMap: {instanceID: 0}
+  userData: 
