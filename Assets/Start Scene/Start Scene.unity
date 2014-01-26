@@ -232,8 +232,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: .589999974, y: .219999999, z: .0199999996}
-  m_Center: {x: 0, y: .00999999978, z: .00999999978}
+  m_Size: {x: .586562514, y: .234375, z: .0199999996}
+  m_Center: {x: .00265628099, y: -.249476224, z: .00999999978}
 --- !u!114 &157141263
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -263,7 +263,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 157141260}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.52878714, y: -2.07461619, z: -4.82041168}
+  m_LocalPosition: {x: 3.22170019, y: -2.07461619, z: -4.82041168}
   m_LocalScale: {x: 4.63930082, y: 4.63930082, z: 4.63930082}
   m_Children:
   - {fileID: 1884023868}
@@ -385,6 +385,7 @@ GameObject:
   - 114: {fileID: 389631643}
   - 65: {fileID: 389631642}
   - 114: {fileID: 389631641}
+  - 114: {fileID: 389631644}
   m_Layer: 0
   m_Name: btnWallOfText
   m_TagString: Untagged
@@ -399,7 +400,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 389631639}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .104734659, y: -2.10335517, z: -4.82041168}
+  m_LocalPosition: {x: 0, y: -2.10335517, z: -4.82041168}
   m_LocalScale: {x: 4.63930082, y: 4.63930082, z: 4.63930082}
   m_Children:
   - {fileID: 707989486}
@@ -432,8 +433,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: .589999974, y: .219999999, z: .0199999996}
-  m_Center: {x: 0, y: .00999999978, z: .00999999978}
+  m_Size: {x: .586562514, y: .234375, z: .0199999996}
+  m_Center: {x: .00265625119, y: -.249476224, z: .00999999978}
 --- !u!114 &389631643
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -456,6 +457,17 @@ MonoBehaviour:
   isHoverEnabled: 1
   editorExtraBounds: []
   editorIgnoreBounds: []
+--- !u!114 &389631644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 389631639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1976171dea5d9334891643f2a5ca90c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &468062205
 GameObject:
   m_ObjectHideFlags: 0
@@ -1018,8 +1030,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: .589999974, y: .219999999, z: .0199999996}
-  m_Center: {x: 0, y: .00999999978, z: .00999999978}
+  m_Size: {x: .586562514, y: .234375, z: .0199999996}
+  m_Center: {x: .00265622139, y: -.249476254, z: .00999999978}
 --- !u!114 &1849950954
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1217,6 +1229,129 @@ Transform:
   m_GameObject: {fileID: 1884611235}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!1 &1970503409
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1970503413}
+  - 23: {fileID: 1970503412}
+  - 33: {fileID: 1970503411}
+  - 114: {fileID: 1970503410}
+  m_Layer: 0
+  m_Name: txtWall
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1970503410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1970503409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 994457055a9434b4aa7b65ad37262d67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _font: {fileID: 0}
+  _text: 
+  _color: {r: 1, g: 1, b: 1, a: 1}
+  _color2: {r: 1, g: 1, b: 1, a: 1}
+  _useGradient: 0
+  _textureGradient: 0
+  _anchor: 6
+  _scale: {x: 1, y: 1, z: 1}
+  _kerning: 0
+  _maxChars: 16
+  _inlineStyling: 0
+  _formatting: 0
+  _wordWrapWidth: 0
+  spacing: 0
+  lineSpacing: 0
+  data:
+    version: 1
+    font: {fileID: 11400000, guid: cb3bf0ad5e92744d6856da9a7d5a3125, type: 2}
+    text: "Year of our Lord, 1756. The merchant vessel Amber Swan arrives at Boston
+      Harbor. Its decks are covered in blood and gore. The only \r\r\nsurvivors of
+      this mysterious catasrophe are the members of the Dreadawful family. They refuse
+      to explain to the civilians exactly \r\r\nwhat happened on their transatlantic
+      sojourn.\r\n\r\nYear of our Lord, circa 1800. The Dreadawful family has established
+      themselves as one of the most powerful families in Boston's \r\r\nshadowy underworld.
+      Virtually all of Boston's merchants are owned by the family. It is said that
+      true Bostonian powerful can be \r\r\ndetermined by who holds directorships in
+      the family corporation, Dreadawful Advancer Mercantiles. Upon the death of Father
+      Henry \r\r\nDreadawful, Jr., his two sons inherit D.A.M. The daughter, Sam,
+      receives nothing. Enraged, she unsticks herself from Time and \r\r\nembarks
+      on a long, long journey of Vengeance.\r\n\r\nYear our Lord, 1916. Dozens of
+      family members perish at the Somme. It is rumored, however, that all of these
+      brave soldiers were \r\r\nmurdered at the hands of their ancestor, Sam.\r\n\r\nYear
+      of our Lord, 2014. Uncle Olaf Dreadawful is on his deathbed. Sam, soon to be
+      the last surviving member of the Dreadawful \r\r\nFamily, reads Olaf's will
+      in dismay. It includes an obscure corporeality clause which specifies that the
+      deceased must no longer \r\r\nbe on this material plane in order for Sam to
+      inherit--however, every family member that fought and fell in the Great War
+      are now \r\r\nall ghosts. Sam returns to the family estate to kill all of the
+      ghosts and claim what is hers by rights.\r\n\r\nAlso there are cops marching
+      around that look a lot like like green gorillas and Sam sees everything in flashing
+      colors because \r\r\nwhy not."
+    color: {r: 1, g: 1, b: 1, a: 1}
+    color2: {r: 1, g: 1, b: 1, a: 1}
+    useGradient: 0
+    textureGradient: 0
+    anchor: 6
+    renderLayer: 0
+    scale: {x: 1.91917384, y: 1.91917527, z: 0}
+    kerning: 0
+    maxChars: 1691
+    inlineStyling: 0
+    formatting: 0
+    wordWrapWidth: 4190
+    spacing: 0
+    lineSpacing: 0
+--- !u!33 &1970503411
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1970503409}
+  m_Mesh: {fileID: 0}
+--- !u!23 &1970503412
+Renderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1970503409}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: d572e11b9f81d4a99a0a2811137dbfb3, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_SortingLayerID: 0
+--- !u!4 &1970503413
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1970503409}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.16072941, y: -.316743255, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

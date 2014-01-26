@@ -49,8 +49,7 @@ public class CopAI : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		Debug.Log(currentState);
-
+	
 		bool canSeePlayer = CanSeePlayer();
 
 		float playerDist = (transform.position - player.transform.position).magnitude;
