@@ -14,9 +14,7 @@ public class TongueAttack : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider col){
-		Debug.Log ("OnTriggerEnter");
 		if(col.tag == "Player"){
-			Debug.Log("Message to player");
 			col.gameObject.GetComponent<PlayerHealth>().TongueAttack();
 		}
 	}
