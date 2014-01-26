@@ -12,14 +12,34 @@ public class TeddyBearAttack : MonoBehaviour {
     public float wubRate;
     AudioLowPassFilter wubFilter;
     AudioSource wubDispenser;
-    public float cutoffIncrease = 100;
-    public AudioClip wob;
+    public float maxCutoff;
+    public AudioClip wob, chime;
+    public float laserTime = .5f;
 
+    public LineRenderer line;
+
+
+    bool chimed = false;
 	public float chargeTime = 1.0f;
     float wubTimer = 0;
     Transform cameraController;
 
 	private float timeButtonHeldDown = 0.0f;
+
+    IEnumerator LAZOR()
+    {
+        line.enabled = true;
+        float laserTimer = 0;
+        while (laserTimer < laserTime)
+        {
+            line.SetWidth(Mathf.Lerp(5, 0, laserTimer / laserTime), 1);
+            laserTimer += Time.deltaTime;
+            yield return null;
+
+        }
+        line.enabled = false;
+    }
+
 
 	//private bool isAttacking  = false;
 
@@ -46,24 +66,40 @@ public class TeddyBearAttack : MonoBehaviour {
             
 			timeButtonHeldDown += Time.deltaTime;
             wubTimer += Time.deltaTime;
-            wubFilter.cutoffFrequency += Time.deltaTime * cutoffIncrease;
+            wubFilter.cutoffFrequency = Mathf.Lerp(100, maxCutoff, timeButtonHeldDown / chargeTime);
             if (wubTimer > wubRate) { 
                Instantiate(wub,bearParticles.transform.position + cameraController.forward, Quaternion.identity);
                wubTimer = 0;
             }
 
+
+            if (timeButtonHeldDown > chargeTime && !chimed)
+            {
+                audio.PlayOneShot(chime);
+                
+                chimed = true;
+            }
+
 		}
 		else{
             wubDispenser.Stop();
-            audio.PlayOneShot(wob, 1);
+            
 			timeButtonHeldDown = 0.0f;
             wubFilter.cutoffFrequency = 100;
 		}
-		
+        if (Input.GetButtonUp(buttonName))
+        {
+            if (chimed)
+            {
+                audio.PlayOneShot(wob, 1);
+                StartCoroutine(LAZOR());
+            }
+            chimed = false;
+        }
 	}
 
 	void AttackWithBear(){
-		foreach(RaycastHit hit in Physics.SphereCastAll(transform.position, 0.25f, GetComponentInChildren<Camera>().transform.forward, teddyRange)){
+		foreach(RaycastHit hit in Physics.SphereCastAll(transform.position, 0.5f, cameraController.forward, teddyRange)){
 			if(hit.transform.gameObject.layer == LayerMask.NameToLayer("Ghost")){
 				hit.transform.gameObject.SendMessage("TeddyAttack", SendMessageOptions.DontRequireReceiver);
 			}
