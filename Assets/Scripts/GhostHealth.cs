@@ -17,7 +17,7 @@ public class GhostHealth : MonoBehaviour {
 
 	public void TeddyAttack(){
 		Debug.Log("Teddy Attack on ghost.");
-		Instantiate(deathParticle,transform.position,Quaternion.identity);
+		Destroy(Instantiate(deathParticle,transform.position,Quaternion.identity),5);
 		Destroy(gameObject);
 	}
 }
