@@ -6,7 +6,7 @@ public class HueShift : MonoBehaviour {
 	// Use this for initialization
     Material mat;
     public Shader hueShift;
-    private float lerpAccumulator = 0;
+    private static float lerpAccumulator = 0;
     private static float hue, oldHue;
     public bool king = false;
 
@@ -27,10 +27,12 @@ public class HueShift : MonoBehaviour {
             {
                 oldHue = hue;
                 hue = Random.value;
+                lerpAccumulator = 0;
             }
-            lerpAccumulator = 0;
+           
         }
-        lerpAccumulator += Time.deltaTime;
+        if(king)
+         lerpAccumulator += Time.deltaTime;
     }
 	
 	// Update is called once per frame

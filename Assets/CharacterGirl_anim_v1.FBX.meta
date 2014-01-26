@@ -1,0 +1,170 @@
+fileFormatVersion: 2
+guid: 814587c7b198935469eec99820d712ba
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: BipGirl
+    100002: BipGirl Head
+    100004: BipGirl L Calf
+    100006: BipGirl L Clavicle
+    100008: BipGirl L Finger0
+    100010: BipGirl L Finger01
+    100012: BipGirl L Finger02
+    100014: BipGirl L Finger1
+    100016: BipGirl L Finger11
+    100018: BipGirl L Finger12
+    100020: BipGirl L Finger2
+    100022: BipGirl L Finger21
+    100024: BipGirl L Finger22
+    100026: BipGirl L Finger3
+    100028: BipGirl L Finger31
+    100030: BipGirl L Finger32
+    100032: BipGirl L Finger4
+    100034: BipGirl L Finger41
+    100036: BipGirl L Finger42
+    100038: BipGirl L Foot
+    100040: BipGirl L Forearm
+    100042: BipGirl L Hand
+    100044: BipGirl L Thigh
+    100046: BipGirl L Toe0
+    100048: BipGirl L UpperArm
+    100050: BipGirl Neck
+    100052: BipGirl Pelvis
+    100054: BipGirl R Calf
+    100056: BipGirl R Clavicle
+    100058: BipGirl R Finger0
+    100060: BipGirl R Finger01
+    100062: BipGirl R Finger02
+    100064: BipGirl R Finger1
+    100066: BipGirl R Finger11
+    100068: BipGirl R Finger12
+    100070: BipGirl R Finger2
+    100072: BipGirl R Finger21
+    100074: BipGirl R Finger22
+    100076: BipGirl R Finger3
+    100078: BipGirl R Finger31
+    100080: BipGirl R Finger32
+    100082: BipGirl R Finger4
+    100084: BipGirl R Finger41
+    100086: BipGirl R Finger42
+    100088: BipGirl R Foot
+    100090: BipGirl R Forearm
+    100092: BipGirl R Hand
+    100094: BipGirl R Thigh
+    100096: BipGirl R UpperArm
+    100098: BipGirl Spine
+    100100: BipGirl Spine1
+    100102: BipGirl Spine2
+    100104: //RootNode
+    100106: GirlArm_mesh
+    400000: BipGirl
+    400002: BipGirl Head
+    400004: BipGirl L Calf
+    400006: BipGirl L Clavicle
+    400008: BipGirl L Finger0
+    400010: BipGirl L Finger01
+    400012: BipGirl L Finger02
+    400014: BipGirl L Finger1
+    400016: BipGirl L Finger11
+    400018: BipGirl L Finger12
+    400020: BipGirl L Finger2
+    400022: BipGirl L Finger21
+    400024: BipGirl L Finger22
+    400026: BipGirl L Finger3
+    400028: BipGirl L Finger31
+    400030: BipGirl L Finger32
+    400032: BipGirl L Finger4
+    400034: BipGirl L Finger41
+    400036: BipGirl L Finger42
+    400038: BipGirl L Foot
+    400040: BipGirl L Forearm
+    400042: BipGirl L Hand
+    400044: BipGirl L Thigh
+    400046: BipGirl L Toe0
+    400048: BipGirl L UpperArm
+    400050: BipGirl Neck
+    400052: BipGirl Pelvis
+    400054: BipGirl R Calf
+    400056: BipGirl R Clavicle
+    400058: BipGirl R Finger0
+    400060: BipGirl R Finger01
+    400062: BipGirl R Finger02
+    400064: BipGirl R Finger1
+    400066: BipGirl R Finger11
+    400068: BipGirl R Finger12
+    400070: BipGirl R Finger2
+    400072: BipGirl R Finger21
+    400074: BipGirl R Finger22
+    400076: BipGirl R Finger3
+    400078: BipGirl R Finger31
+    400080: BipGirl R Finger32
+    400082: BipGirl R Finger4
+    400084: BipGirl R Finger41
+    400086: BipGirl R Finger42
+    400088: BipGirl R Foot
+    400090: BipGirl R Forearm
+    400092: BipGirl R Hand
+    400094: BipGirl R Thigh
+    400096: BipGirl R UpperArm
+    400098: BipGirl Spine
+    400100: BipGirl Spine1
+    400102: BipGirl Spine2
+    400104: //RootNode
+    400106: GirlArm_mesh
+    4300000: GirlArm_mesh
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: GirlArm_mesh
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
