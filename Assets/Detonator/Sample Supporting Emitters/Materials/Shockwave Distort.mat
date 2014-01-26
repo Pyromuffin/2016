@@ -7,7 +7,7 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Shockwave Distort
-  m_Shader: {fileID: 4800000, guid: 5e4f5945c634c4261985dc9a1204b410, type: 3}
+  m_Shader: {fileID: 4800000, guid: 963484209d11fd7f110076aa44295342, type: 3}
   m_ShaderKeywords: []
   m_CustomRenderQueue: -1
   m_SavedProperties:
@@ -31,7 +31,7 @@ Material:
       data:
         first:
           name: _BumpAmt
-        second: 18.2857113
+        second: 13.7142859
     m_Colors:
       data:
         first:
