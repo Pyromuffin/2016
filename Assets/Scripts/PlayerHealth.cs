@@ -5,9 +5,13 @@ public class PlayerHealth : MonoBehaviour {
 
 	public int maxHealth = 10;
 	public int currentHealth = 10;
+    public AnimationCurve effectCurve;
+    public float effectTime = 1f;
+    public float blurStrength, vignetteStrength;
 
 	HealthBar healthBar;
 	GameObject deadState;
+    Vignetting[] vignettes;
 
 	// Use this for initialization
 	void Start () {
@@ -15,6 +19,8 @@ public class PlayerHealth : MonoBehaviour {
 		healthBar = GameObject.FindObjectOfType<HealthBar> ();
 		deadState = GameObject.Find ("deadState");
 		deadState.SetActive (false);
+       
+        vignettes = FindObjectsOfType<Vignetting>();
 	}
 	
 	// Update is called once per frame
@@ -23,10 +29,27 @@ public class PlayerHealth : MonoBehaviour {
 	
 	}
 
+    IEnumerator hitEffect()
+    {
+        float timer = 0;
+
+        while (timer < 1)
+        {
+            foreach (var v in vignettes)
+            {
+                v.intensity = effectCurve.Evaluate(timer) * vignetteStrength;
+                v.blur = effectCurve.Evaluate(timer) * blurStrength;
+            }
+            timer += Time.deltaTime / effectTime;
+            yield return null;
+        }
+    }
+
 	public void TongueAttack(){
 		Debug.Log ("TongueAttack in player");
 		currentHealth--;
 		healthBar.DecrementHealth (1);
+        StartCoroutine(hitEffect());
 		CheckDeath ();
 	}
 

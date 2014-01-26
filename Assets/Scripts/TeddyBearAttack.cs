@@ -6,7 +6,7 @@ public class TeddyBearAttack : MonoBehaviour {
 	public string buttonName = "Fire1";
 	public float teddyRange = 5.0f;
 	public string teddyName = "TeddyBear";
-	public GameObject teddy;
+    TeddyCharging teddyCharging;
 
 	public float chargeTime = 1.0f;
 
@@ -16,12 +16,12 @@ public class TeddyBearAttack : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		teddy = GameObject.Find(teddyName);
+        teddyCharging = FindObjectOfType<TeddyCharging>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		teddy.GetComponent<TeddyCharging>().chargeLevel = Mathf.Clamp01(timeButtonHeldDown/chargeTime);
+		teddyCharging.chargeLevel = Mathf.Clamp01(timeButtonHeldDown/chargeTime);
 
 		if(timeButtonHeldDown >= chargeTime && Input.GetButtonUp(buttonName)){
 			AttackWithBear();
