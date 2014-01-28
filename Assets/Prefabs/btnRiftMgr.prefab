@@ -11,7 +11,6 @@ GameObject:
   - 114: {fileID: 11400002}
   - 65: {fileID: 6500000}
   - 114: {fileID: 11400004}
-  - 114: {fileID: 11400000}
   m_Layer: 0
   m_Name: btnRiftMgr
   m_TagString: Untagged
@@ -67,7 +66,7 @@ GameObject:
   - 33: {fileID: 3300004}
   - 64: {fileID: 6400000}
   - 23: {fileID: 2300004}
-  - 114: {fileID: 11400012}
+  - 114: {fileID: 11400000}
   m_Layer: 0
   m_Name: Checkbox
   m_TagString: Untagged
@@ -82,7 +81,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.55659056, y: -2.09863973, z: -4.82041168}
+  m_LocalPosition: {x: 6.40223646, y: -2.13895321, z: -4.80000019}
   m_LocalScale: {x: 4.63930082, y: 4.63930082, z: 4.63930082}
   m_Children:
   - {fileID: 400004}
@@ -118,7 +117,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100006}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .00674754335, y: .0199474916, z: -.390953362}
+  m_LocalPosition: {x: .00674754335, y: .0199474916, z: 0}
   m_LocalScale: {x: .25, y: .25, z: .25}
   m_Children: []
   m_Father: {fileID: 400000}
@@ -236,13 +235,17 @@ MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
+  m_GameObject: {fileID: 100006}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eee1b7e8b63d36d47a06572a13f2f016, type: 3}
+  m_Script: {fileID: 11500000, guid: 215ee6939dbaafd498949cef2071f6b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  intro: {fileID: 0}
+  checkbox: {fileID: 100006}
+  checkboxTrue: {fileID: 2800000, guid: d12249d18bf7ede478374cd6460d652f, type: 3}
+  checkboxFalse: {fileID: 2800000, guid: e065a706933b0844482d9ca5a78860c2, type: 3}
+  OVRController: {fileID: 0}
+  normalController: {fileID: 0}
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -254,7 +257,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d932ed487efc2f4c8b824406c968e59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sendMessageTarget: {fileID: 100006}
+  sendMessageTarget: {fileID: 0}
   SendMessageOnDownMethodName: 
   SendMessageOnUpMethodName: OnButtonClick
   SendMessageOnClickMethodName: 
@@ -372,20 +375,6 @@ MonoBehaviour:
   tweenDuration: .100000001
   canButtonBeHeldDown: 1
   useOnReleaseInsteadOfOnUp: 0
---- !u!114 &11400012
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100006}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 215ee6939dbaafd498949cef2071f6b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  checkbox: {fileID: 100006}
-  checkboxTrue: {fileID: 2800000, guid: d12249d18bf7ede478374cd6460d652f, type: 3}
-  checkboxFalse: {fileID: 2800000, guid: e065a706933b0844482d9ca5a78860c2, type: 3}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

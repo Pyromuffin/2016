@@ -45,7 +45,7 @@ public class TeddyBearAttack : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        cameraController = FindObjectOfType<OVRCameraController>().transform;
+        cameraController = GameObject.Find("OVRPlayerController").transform;
         teddyCharging = FindObjectOfType<TeddyCharging>();
         var wubGO = GameObject.Find("Wub Dispenser");
         wubDispenser = wubGO.GetComponent<AudioSource>();
