@@ -11,7 +11,7 @@ public class PlayerHealth : MonoBehaviour {
     public AudioClip[] ouchs;
     public bool dead = false;
 	HealthBar healthBar;
-	GameObject deadStateGO;
+	public GameObject deadStateGO;
     Vignetting[] vignettes;
     public Animator animator;
 
@@ -20,7 +20,7 @@ public class PlayerHealth : MonoBehaviour {
 		currentHealth = maxHealth;
 		healthBar = GameObject.FindObjectOfType<HealthBar> ();
 		deadStateGO = GameObject.Find ("deadState");
-        FindObjectOfType<GhostBar>().dsGO = deadStateGO;
+        //FindObjectOfType<GhostBar>().dsGO = deadStateGO;
 		deadStateGO.SetActive (false);
        
         vignettes = FindObjectsOfType<Vignetting>();
@@ -95,7 +95,8 @@ public class PlayerHealth : MonoBehaviour {
             foreach (var g in ghosts)
                 g.enabled = false;
 
-            FindObjectOfType<OVRPlayerController>().enabled = false;
+            
+            FindObjectOfType<CharacterMotor>().enabled = false;
             deadStateGO.SetActive(true);
             deadState.ShowDeath();
 			

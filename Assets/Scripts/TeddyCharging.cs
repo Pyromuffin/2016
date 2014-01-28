@@ -15,7 +15,7 @@ public class TeddyCharging : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		//Go from black to white as it charges
-		renderer.material.color = Color.Lerp(Color.black, Color.white, chargeLevel);
+		//renderer.material.color = Color.Lerp(Color.black, Color.white, chargeLevel);
 		//Go from full scale, to 40% scale as it charges
 		transform.localScale = originalScale * Mathf.Lerp(1.0f, 0.4f, chargeLevel);
 	}

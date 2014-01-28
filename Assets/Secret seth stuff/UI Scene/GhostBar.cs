@@ -4,7 +4,7 @@ using System.Collections;
 //Moves the progress bar based on how many ghosts we have killed
 public class GhostBar : MonoBehaviour {
 	
-	int numGhostsKilled = 0;
+	float numGhostsKilled = 0;
 	public int numGhosts;
     RemorseText remorse;
     public GameObject dsGO;
