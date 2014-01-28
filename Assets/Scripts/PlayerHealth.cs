@@ -51,7 +51,6 @@ public class PlayerHealth : MonoBehaviour {
 	public void TongueAttack(){
         if (!dead)
         {
-            
             currentHealth--;
             healthBar.DecrementHealth(1);
             StartCoroutine(hitEffect());

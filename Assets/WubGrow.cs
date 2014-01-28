@@ -10,7 +10,7 @@ public class WubGrow : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         Destroy(gameObject, wubTime);
-        player = FindObjectOfType<OVRCameraController>().transform;
+        player = GameObject.Find("OVRPlayerController").transform;
         transform.localScale = Vector3.one * Random.value * 2;
 	}
 	

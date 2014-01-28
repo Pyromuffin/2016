@@ -13,7 +13,11 @@ public class RiftManager : MonoBehaviour {
 	private bool originalFullscreen;
 	private bool useRift = false;
 
-	// Use this for initialization
+	//Basically, this is a getter for useRift
+	public bool UseRift{
+		get {return useRift;}
+	}
+
 	void Awake (){
 
 		//Stuff to make this a singleton, i.e. only one instance ever occurs at any time
@@ -37,35 +41,23 @@ public class RiftManager : MonoBehaviour {
 	}
 
 	public GameObject checkbox;
-	public Texture2D checkboxTrue;
-	public Texture2D checkboxFalse;
+	public Texture2D  checkboxTrue;
+	public Texture2D  checkboxFalse;
 
 	public void OnButtonClick(){
 		if(useRift){
+			//Revert to the original screen settings
 			Screen.SetResolution(originalResolution.width, originalResolution.height, originalFullscreen);
 			checkbox.renderer.material.mainTexture = checkboxFalse;
-			ActivateRift();
+			useRift = true;
 		}
 		else{
+			//Double the screen's horizontal resolution, and ensure that fullscreen is off
 			Screen.SetResolution(2*originalResolution.width, originalResolution.height, false);
 			checkbox.renderer.material.mainTexture = checkboxTrue;
-			DeactivateRift();
+			useRift = false;
 		}
 
-	}
-
-	public GameObject OVRController;
-
-	public GameObject normalController;
-
-	private void ActivateRift(){
-
-		useRift = true;
-	}
-
-	private void DeactivateRift(){
-		OVRController.SetActive(false);
-		useRift = false;
 	}
 
 }
